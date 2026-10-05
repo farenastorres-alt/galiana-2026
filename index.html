@@ -1,557 +1,318 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Celebración de Fernanda y Antonio en el Palacio de Galiana, Toledo."
-  >
+<title>Fernanda & Antonio</title>
 
-  <title>Fernanda & Antonio | Toledo 2026</title>
+https://fonts.googleapis.com
+https://fonts.gstatic.com
 
-  <!-- Tipografías -->
-  https://fonts.googleapis.com
-  <link
-    rel="preconnect"
-    href=  href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500&display=swap"
-    rel="stylesheet"
-  >
+https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap
 
-  <style> --ivory-light: #fbf8f2;
-      --ink: #39342e;
-      --muted: #756b60;
-      --sage: #707960;
-      --sage-dark: #5e6750;
-      --gold: #b39a69;
-      --line: rgba(112, 121, 96, 0.28);
-      --white: #ffffff;
-    }
+<style>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+:root{
+  --background:#f7f2ea;
+  --text:#463d34;
+  --green:#77805f;
+  --gold:#b59a67;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    body {
-      background: var(--ivory);
-      color: var(--ink);
-      font-family: "Montserrat", sans-serif;
-      font-weight: 300;
-      line-height: 1.85;
-      text-align: center;
-    }
+body{
+  background:var(--background);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+  text-align:center;
+  line-height:1.8;
+}
 
-    img {
-      display: block;
-      max-width: 100%;
-    }
+.hero img{
+  width:100%;
+  display:block;
+}
 
-    .page {
-      overflow: hidden;
-    }
+.container{
+  max-width:850px;
+  margin:auto;
+  padding:60px 30px;
+}
 
-    /* IMAGEN PRINCIPAL */
+.names{
+  font-family:'Cormorant Garamond',serif;
+  font-size:78px;
+  font-weight:400;
+  line-height:1;
+  margin-bottom:15px;
+}
 
-    .invitation-wrapper {
-      width: 100%;
-      background: var(--ivory-light);
-    }
+.subtitle{
+  font-size:13px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#817568;
+}
 
-    .invitation-image {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
+.intro{
+  margin-top:70px;
+  font-size:18px;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
 
-    /* CABECERA */
+.section{
+  margin-top:100px;
+}
 
-    .header {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 72px 24px 40px;
-    }
+.section h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:52px;
+  font-weight:500;
+  color:var(--green);
+  margin-bottom:35px;
+}
 
-    .eyebrow {
-      margin-bottom: 18px;
-      color: var(--gold);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-    }
+.card{
+  background:rgba(255,255,255,0.55);
+  border:1px solid #ddd2c6;
+  border-radius:18px;
+  padding:40px;
+}
 
-    h1,
-    h2,
-    .signature {
-      font-family: "Italiana", serif;
-      font-weight: 400;
-    }
+.location-text{
+  font-size:17px;
+}
 
-    h1 {
-      color: var(--ink);
-      font-size: clamp(52px, 9vw, 92px);
-      line-height: 1.05;
-      letter-spacing: 1px;
-    }
+.button{
+  display:inline-block;
+  margin-top:25px;
+  background:var(--green);
+  color:white;
+  text-decoration:none;
+  padding:14px 32px;
+  border-radius:50px;
+  transition:0.3s;
+}
 
-    .date-location {
-      margin-top: 24px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 2;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
+.button:hover{
+  opacity:0.9;
+}
 
-    .ornament {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 190px;
-      margin: 44px auto 0;
-      gap: 14px;
-    }
+form{
+  margin-top:30px;
+}
 
-    .ornament::before,
-    .ornament::after {
-      content: "";
-      display: block;
-      flex: 1;
-      height: 1px;
-      background: var(--line);
-    }
+input{
+  width:100%;
+  padding:16px;
+  margin-bottom:15px;
+  border:1px solid #d8ccc0;
+  border-radius:10px;
+  background:white;
+  font-size:16px;
+}
 
-    .ornament-symbol {
-      color: var(--gold);
-      font-size: 14px;
-    }
+button{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:50px;
+  background:var(--green);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
 
-    /* CONTENIDO */
+.gift-box{
+  margin-top:30px;
+  border:1px solid #d8ccc0;
+  border-radius:12px;
+  background:white;
+  padding:30px;
+}
 
-    .section {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 72px 28px;
-    }
+.iban{
+  letter-spacing:2px;
+  font-size:18px;
+}
 
-    .section + .section {
-      border-top: 1px solid var(--line);
-    }
+.footer{
+  margin-top:120px;
+  padding-bottom:60px;
+  font-family:'Cormorant Garamond',serif;
+  color:var(--green);
+  font-size:34px;
+}
 
-    h2 {
-      margin-bottom: 32px;
-      color: var(--sage-dark);
-      font-size: clamp(38px, 7vw, 58px);
-      line-height: 1.15;
-    }
+@media(max-width:768px){
 
-    .intro {
-      color: #514940;
-      font-size: 16px;
-      line-height: 2.05;
-    }
+  .names{
+    font-size:54px;
+  }
 
-    .intro p + p {
-      margin-top: 24px;
-    }
+  .section h2{
+    font-size:40px;
+  }
 
-    .intro-highlight {
-      color: var(--sage-dark);
-      font-family: "Italiana", serif;
-      font-size: clamp(25px, 4.5vw, 34px);
-      line-height: 1.45;
-    }
+  .intro{
+    font-size:17px;
+  }
 
-    /* LOCALIZACIÓN */
+}
 
-    .venue {
-      padding: 44px 28px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.34);
-    }
-
-    .venue-name {
-      margin-bottom: 10px;
-      color: var(--ink);
-      font-family: "Italiana", serif;
-      font-size: 30px;
-    }
-
-    .venue-details {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 2;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-
-    .venue-note {
-      max-width: 520px;
-      margin: 25px auto 0;
-      color: #5e554c;
-      font-size: 14px;
-    }
-
-    .map-link {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 30px;
-      border: 1px solid var(--sage);
-      color: var(--sage-dark);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
-    }
-
-    .map-link:hover,
-    .map-link:focus {
-      background: var(--sage);
-      color: var(--white);
-    }
-
-    /* RSVP */
-
-    .rsvp-intro {
-      max-width: 570px;
-      margin: 0 auto 34px;
-      color: #5e554c;
-      font-size: 15px;
-    }
-
-    .rsvp-form {
-      max-width: 610px;
-      margin: 0 auto;
-    }
-
-    .field {
-      margin-bottom: 20px;
-      text-align: left;
-    }
-
-    .field label {
-      display: block;
-      margin-bottom: 9px;
-      color: var(--muted);
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .field input {
-      width: 100%;
-      padding: 16px 4px;
-      border: 0;
-      border-bottom: 1px solid var(--line);
-      border-radius: 0;
-      outline: none;
-      background: transparent;
-      color: var(--ink);
-      font-family: "Montserrat", sans-serif;
-      font-size: 16px;
-    }
-
-    .field input:focus {
-      border-bottom-color: var(--sage);
-    }
-
-    .field input::placeholder {
-      color: #9a9187;
-    }
-
-    .submit-button {
-      width: 100%;
-      margin-top: 22px;
-      padding: 17px 24px;
-      border: 1px solid var(--sage);
-      border-radius: 0;
-      background: var(--sage);
-      color: var(--white);
-      cursor: pointer;
-      font-family: "Montserrat", sans-serif;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      transition:
-        background-color 0.2s ease,
-        border-color 0.2s ease;
-    }
-
-    .submit-button:hover,
-    .submit-button:focus {
-      border-color: var(--sage-dark);
-      background: var(--sage-dark);
-    }
-
-    .form-message {
-      display: none;
-      margin-top: 22px;
-      color: var(--sage-dark);
-      font-size: 14px;
-    }
-
-    /* REGALO */
-
-    .gift-text {
-      max-width: 610px;
-      margin: 0 auto;
-      color: #574f47;
-      font-size: 15px;
-      line-height: 2;
-    }
-
-    .gift-box {
-      max-width: 610px;
-      margin: 34px auto 0;
-      padding: 30px 22px;
-      border-top: 1px solid var(--gold);
-      border-bottom: 1px solid var(--gold);
-    }
-
-    .gift-label {
-      margin-bottom: 12px;
-      color: var(--gold);
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    .iban {
-      overflow-wrap: anywhere;
-      color: var(--ink);
-      font-family: "Italiana", serif;
-      font-size: clamp(19px, 4vw, 27px);
-      letter-spacing: 2px;
-    }
-
-    /* PIE */
-
-    footer {
-      padding: 60px 24px 80px;
-    }
-
-    .signature {
-      color: var(--sage-dark);
-      font-size: 38px;
-    }
-
-    .footer-date {
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: 10px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    /* MÓVIL */
-
-    @media (max-width: 640px) {
-      .header {
-        padding-top: 54px;
-      }
-
-      .section {
-        padding: 58px 22px;
-      }
-
-      .intro {
-        font-size: 15px;
-      }
-
-      .venue {
-        padding: 35px 20px;
-      }
-
-      .date-location {
-        letter-spacing: 2px;
-      }
-    }
-  </style>
+</style>
 </head>
 
 <body>
-  <main class="page">
 
-    <div class="invitation-wrapper">
-      ./invitacion.jpg
-    </div>
+<section class="hero">
 
-    <header class="header">
-      <div class="eyebrow">Celebración en Toledo</div>
+invitacion.jpg
 
-      <h1>Fernanda &amp; Antonio</h1>
+</section>
 
-      <div class="date-location">
-        9 de octubre de 2026<br>
-        Palacio de Galiana · Toledo
-      </div>
+<div class="container">
 
-      <div class="ornament" aria-hidden="true">
-        <span class="ornament-symbol">◆</span>
-      </div>
-    </header>
+<div class="names">
+Fernanda & Antonio
+</div>
 
-    <section class="section">
-      <div class="intro">
-        <p>
-          Antes de reunirnos con todos vosotros en Baja California Sur
-          el próximo abril, nos hace muchísima ilusión compartir la
-          primera parte de nuestra celebración.
-        </p>
+<div class="subtitle">
+Celebración en Toledo · 9 de octubre de 2026
+</div>
 
-        <p>
-          El 9 de octubre de 2026 contraeremos matrimonio en una
-          ceremonia íntima y familiar. Después, queremos festejarlo
-          por todo lo alto junto a vosotros.
-        </p>
+<div class="intro">
 
-        <p class="intro-highlight">
-          Os esperamos para vivir una noche llena de emoción,
-          sorpresas, reencuentros, buena música y muchas ganas
-          de brindar.
-        </p>
+Antes de reunirnos con todos vosotros en Baja California Sur el próximo abril,
+nos hace una enorme ilusión compartir con vosotros la primera parte de nuestra celebración.
 
-        <p>
-          Será el comienzo de una nueva etapa y no imaginamos una
-          manera más especial de celebrarlo que rodeados de las
-          personas que han formado parte de nuestra historia.
-        </p>
+<br><br>
 
-        <p>
-          Estamos deseando compartir esta noche con vosotros.
-        </p>
-      </div>
-    </section>
+El 9 de octubre de 2026 contraeremos matrimonio en una ceremonia íntima y familiar.
 
-    <section class="section">
-      <h2>La celebración</h2>
+<br><br>
 
-      <div class="venue">
-        <div class="venue-name">Palacio de Galiana</div>
+La verdadera fiesta comienza después, y nos encantaría que formarais parte de ella.
 
-        <div class="venue-details">
-          Toledo<br>
-          Viernes, 9 de octubre de 2026<br>
-          21:30 h
-        </div>
+<br><br>
 
-        <p class="venue-note">
-          Etiqueta rigurosa: esmoquin para los señores y traje largo
-          para las señoras.
-        </p>
+Os esperamos en Toledo para celebrarlo por todo lo alto en una noche llena de emoción, reencuentros, sorpresas, buena música y muchas ganas de brindar.
 
-        <a
-          class="map-link"
-          href="https://www.google.com/maps/search/?api=1&query=Palacio%20de%20Galiana Maps
-        </a>
-      </div>
-    </section>
+<br><br>
 
-    <section class="section" id="confirmacion">
-      <h2>Confirmación</h2>
+Será una ocasión muy especial para compartir este momento con las personas que han formado parte de nuestra historia y que ocupan un lugar importante en nuestras vidas.
 
-      <p class="rsvp-intro">
-        Nos haría muchísima ilusión contar con vuestra presencia.
-        Por favor, indicad vuestros nombres a continuación.
-      </p>
+<br><br>
 
-      <form class="rsvp-form" id="rsvp-form">
-        <div class="field">
-          <label for="nombre">Nombre y apellidos</label>
-          <input
-            id="nombre"
-            name="nombre"
-            type="text"
-            placeholder="Nombre y apellidos"
-            autocomplete="name"
-            required
-          >
-        </div>
+Estamos deseando celebrarlo con vosotros.
 
-        <div class="field">
-          <label for="acompanante">
-            Nombre y apellidos del acompañante
-          </label>
-          <input
-            id="acompanante"
-            name="acompanante"
-            type="text"
-            placeholder="Déjalo en blanco si vienes sin acompañante"
-          >
-        </div>
+</div>
 
-        <button class="submit-button" type="submit">
-          Confirmar asistencia
-        </button>
+<div class="section">
 
-        <p class="form-message" id="form-message">
-          Gracias. La confirmación se ha completado correctamente.
-        </p>
-      </form>
-    </section>
+<h2>Palacio de Galiana</h2>
 
-    <section class="section">
-      <h2>Un detalle</h2>
+<div class="card">
 
-      <div class="gift-text">
-        <p>
-          El mejor regalo será poder compartir este momento con
-          vosotros y celebrar juntos una noche tan importante para
-          nosotros.
-        </p>
+<div class="location-text">
 
-        <p style="margin-top: 22px;">
-          Para quienes, además, deseen tener un detalle, os dejamos
-          a continuación nuestros datos con todo nuestro cariño y
-          agradecimiento.
-        </p>
-      </div>
+Palacio de Galiana
 
-      <div class="gift-box">
-        <div class="gift-label">Cuenta bancaria</div>
+<br>
 
-        <div class="iban">
-          ESXX XXXX XXXX XXXX XXXX XXXX
-        </div>
-      </div>
-    </section>
+Toledo
 
-    <footer>
-      <div class="signature">Fer &amp; Cuco</div>
+<br><br>
 
-      <div class="footer-date">
-        Toledo · 9 de octubre de 2026
-      </div>
-    </footer>
+9 de octubre de 2026
 
-  </main>
+<br>
 
-  <script>
-    const form = document.getElementById("rsvp-form");
-    const message = document.getElementById("form-message");
+21:30 h
 
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      message.style.display = "block";
-    });
-  </script>
+</div>
+
+https://maps.google.com/?q=Palacio+de+Galiana+Toledo
+Ver ubicación
+</a>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Confirmación de asistencia</h2>
+
+<div class="card">
+
+<form>
+
+<input
+type="text"
+placeholder="Nombre y apellidos">
+
+<input
+type="text"
+placeholder="Nombre y apellidos del acompañante">
+
+<button type="submit">
+Confirmar asistencia
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Regalo</h2>
+
+<div class="card">
+
+<p>
+
+Vuestra presencia es, sin duda, el mejor regalo que podemos recibir y lo que verdaderamente dará sentido a esta celebración.
+
+</p>
+
+<br>
+
+<p>
+
+Para quienes deseen acompañarnos también con un detalle, hemos habilitado la siguiente cuenta:
+
+</p>
+
+<div class="gift-box">
+
+<div class="iban">
+
+ESXX XXXX XXXX XXXX XXXX XXXX
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Fernanda & Antonio
+</div>
+
+</div>
+
 </body>
 </html>
