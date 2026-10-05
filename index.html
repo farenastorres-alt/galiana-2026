@@ -1,153 +1,238 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Fernanda & Antonio</title>
+
+<link relonts.googleapis.com
+<link rel="preconnect" href<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300play=swap
 
 <style>
 
-body{
+*{
+    box-sizing:border-box;
     margin:0;
+    padding:0;
+}
+
+body{
     background:#f7f3ea;
-    color:#4a4035;
-    font-family: Georgia, serif;
+    color:#3e352e;
     text-align:center;
 }
 
 .hero{
-    padding:60px 25px;
+    max-width:900px;
+    margin:auto;
+    padding:30px 20px 50px;
 }
 
-h1{
-    font-size:48px;
-    margin-bottom:10px;
+.hero img{
+    width:100%;
+    border-radius:12px;
+    display:block;
 }
 
-h2{
-    color:#6f7c5d;
+.names{
+    font-family:'Cormorant Garamond', serif;
+    font-size:56px;
+    font-weight:400;
+    margin-top:35px;
+    letter-spacing:1px;
+}
+
+.details{
+    font-family:'Montserrat', sans-serif;
+    margin-top:20px;
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#857666;
+    line-height:2;
 }
 
 .section{
-    background:white;
-    margin:20px;
-    padding:30px;
-    border-radius:16px;
-    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+    max-width:700px;
+    margin:70px auto;
+    padding:0 30px;
+}
+
+.title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:44px;
+    color:#7d8666;
+    margin-bottom:30px;
+}
+
+.text{
+    font-family:'Montserrat', sans-serif;
+    line-height:2;
+    font-size:15px;
+    color:#4d4339;
+}
+
+.form{
+    max-width:550px;
+    margin:auto;
 }
 
 input{
     width:100%;
-    padding:14px;
-    margin:8px 0;
-    border:1px solid #ddd;
-    border-radius:8px;
-    box-sizing:border-box;
+    border:none;
+    border-bottom:1px solid #d7cec2;
+    background:transparent;
+    padding:18px 5px;
+    margin-bottom:25px;
+    font-size:16px;
+    font-family:'Montserrat', sans-serif;
+}
+
+input:focus{
+    outline:none;
+    border-bottom:1px solid #7d8666;
 }
 
 button{
     width:100%;
-    background:#b89a5e;
+    background:#7d8666;
     color:white;
     border:none;
-    padding:16px;
-    border-radius:8px;
-    font-size:16px;
+    border-radius:50px;
+    padding:18px;
+    font-family:'Montserrat', sans-serif;
+    letter-spacing:1px;
+    margin-top:10px;
 }
 
-.small{
-    color:#777;
+.gift-box{
+    margin-top:30px;
+    padding:25px;
+    border:1px solid #d7cec2;
+    border-radius:12px;
+}
+
+.iban{
+    font-family:'Montserrat', sans-serif;
+    font-size:18px;
+    letter-spacing:1px;
+    margin-top:15px;
+}
+
+.footer{
+    padding:60px 20px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:32px;
+    color:#7d8666;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="hero">
+<section class="hero">
 
-<img
-src="invitacion.jpg"
-alt="Invitación"
-style="
-width:100%;
-max-width:700px;
-border-radius:12px;
-box-shadow:0 4px 20px rgba(0,0,0,0.15);
-">
+invitacion.jpg
 
-<h1>Fernanda & Antonio</h1>
-
-<p>9 de octubre de 2026</p>
-
-<p>Palacio de Galiana · Toledo</p>
-
+<div class="names">
+Fernanda & Antonio
 </div>
 
-<div class="section">
+<div class="details">
+9 de octubre de 2026<br>
+Palacio de Galiana · Toledo
+</div>
 
-<h2>Celebración</h2>
+</section>
 
-<p>
+<section class="section">
+
+<h2 class="title">
+Celebración
+</h2>
+
+<div class="text">
+
 Os esperamos para celebrar con nosotros un día muy especial.
-</p>
 
-<p>
-📍 Palacio de Galiana · Toledo
-</p>
+<br><br>
 
-<p>
-🕤 21:30 h
-</p>
+Palacio de Galiana · Toledo
 
-<p>
-🥂 Etiqueta rigurosa<br>
-Señores, esmoquin.<br>
+<br>
+
+21:30 h
+
+<br><br>
+
+Etiqueta rigurosa
+
+<br>
+
+Señores, esmoquin.
+
+<br>
+
 Señoras, traje largo.
-</p>
 
 </div>
 
-<div class="section">
+</section>
 
-<h2>Confirmación de asistencia</h2>
+<section class="section">
 
-<input placeholder="Nombre y apellidos">
+<h2 class="title">
+Confirmación de asistencia
+</h2>
 
-<input placeholder="Nombre y apellidos del acompañante">
+<div class="form">
+
+<input type="text" placeholder="Nombre y apellidos">
+
+<input type="text" placeholder="Nombre y apellidos del acompañante">
 
 <button>
 Confirmar asistencia
 </button>
 
-<p class="small">
-La confirmación online estará disponible próximamente.
-</p>
-
 </div>
 
-<div class="section">
+</section>
 
-<h2>Regalo</h2>
+<section class="section">
 
-<p>
+<h2 class="title">
+Regalo
+</h2>
+
+<div class="text">
+
 Vuestra compañía es el mejor regalo.
-</p>
 
-<p>
+<br><br>
+
 Para quienes deseen tener un detalle con nosotros:
-</p>
-
-<p>
-IBAN: ESXX XXXX XXXX XXXX XXXX XXXX
-</p>
 
 </div>
 
-<div style="padding:40px">
+<div class="gift-box">
 
+<div class="iban">
+
+ESXX XXXX XXXX XXXX XXXX XXXX
+
+</div>
+
+</div>
+
+</section>
+
+<div class="footer">
 Fernanda & Antonio
-
 </div>
 
 </body>
