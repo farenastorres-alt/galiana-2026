@@ -2,168 +2,241 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fernanda & Antonio</title>
 
+https://fonts.googleapis.com
+https://fonts.gstatic.com
+
+https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap
+
 <style>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root{
+  --background:#f7f2ea;
+  --text:#463d34;
+  --green:#77805f;
+  --gold:#b59a67;
 }
 
-body {
-  background: #f7f3ea;
-  color: #40372f;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  line-height: 1.6;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-.hero img {
-  width: 100%;
-  display: block;
+body{
+  background:var(--background);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+  text-align:center;
+  line-height:1.8;
 }
 
-.content {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 25px;
+.hero img{
+  width:100%;
+  display:block;
 }
 
-h1 {
-  font-size: 52px;
-  font-weight: 300;
-  margin-bottom: 10px;
+.container{
+  max-width:850px;
+  margin:auto;
+  padding:60px 30px;
 }
 
-.subtitle {
-  color: #7d7468;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 13px;
+.names{
+  font-family:'Cormorant Garamond',serif;
+  font-size:78px;
+  font-weight:400;
+  line-height:1;
+  margin-bottom:15px;
 }
 
-.section {
-  margin-top: 70px;
+.subtitle{
+  font-size:13px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#817568;
 }
 
-h2 {
-  font-size: 38px;
-  margin-bottom: 25px;
-  color: #7b8464;
+.intro{
+  margin-top:70px;
+  font-size:18px;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-p {
-  margin-bottom: 15px;
+.section{
+  margin-top:100px;
 }
 
-input {
-  width: 100%;
-  padding: 18px;
-  margin-bottom: 15px;
-  border: 1px solid #d8d0c5;
-  border-radius: 8px;
-  font-size: 16px;
+.section h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:52px;
+  font-weight:500;
+  color:var(--green);
+  margin-bottom:35px;
 }
 
-button {
-  width: 100%;
-  padding: 18px;
-  background: #7b8464;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  font-size: 16px;
+.card{
+  background:rgba(255,255,255,0.55);
+  border:1px solid #ddd2c6;
+  border-radius:18px;
+  padding:40px;
 }
 
-.gift {
-  border: 1px solid #d8d0c5;
-  border-radius: 12px;
-  padding: 25px;
-  margin-top: 20px;
-  background: white;
+.location-text{
+  font-size:17px;
 }
 
-.footer {
-  margin-top: 80px;
-  padding-bottom: 50px;
-  color: #7b8464;
-  font-size: 28px;
+.button{
+  display:inline-block;
+  margin-top:25px;
+  background:var(--green);
+  color:white;
+  text-decoration:none;
+  padding:14px 32px;
+  border-radius:50px;
+  transition:0.3s;
+}
+
+.button:hover{
+  opacity:0.9;
+}
+
+form{
+  margin-top:30px;
+}
+
+input{
+  width:100%;
+  padding:16px;
+  margin-bottom:15px;
+  border:1px solid #d8ccc0;
+  border-radius:10px;
+  background:white;
+  font-size:16px;
+}
+
+button{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:50px;
+  background:var(--green);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.gift-box{
+  margin-top:30px;
+  border:1px solid #d8ccc0;
+  border-radius:12px;
+  background:white;
+  padding:30px;
+}
+
+.iban{
+  letter-spacing:2px;
+  font-size:18px;
+}
+
+.footer{
+  margin-top:120px;
+  padding-bottom:60px;
+  font-family:'Cormorant Garamond',serif;
+  color:var(--green);
+  font-size:34px;
+}
+
+@media(max-width:768px){
+
+  .names{
+    font-size:54px;
+  }
+
+  .section h2{
+    font-size:40px;
+  }
+
+  .intro{
+    font-size:17px;
+  }
+
 }
 
 </style>
-
 </head>
+
 <body>
 
-<div class="hero">
-  <img src="invitacion.jpg" alt=ass="content">
+<section class="hero">
 
-  <h1>Fernanda & Antonio</h1>
+invitacion.jpg
 
-  <div class="subtitle">
-    9 de octubre de 2026<br>
-    Palacio de Galiana · Toledo
-  </div>
+</section>
 
-  <div class="section">
+<div class="container">
 
-    <h2>Confirmación de asistencia</h2>
+<div class="names">
+Fernanda & Antonio
+</div>
 
-    <p>
-      Nos haría mucha ilusión contar con vuestra presencia.
-    </p>
+<div class="subtitle">
+Celebración en Toledo · 9 de octubre de 2026
+</div>
 
-    <form>
+<div class="intro">
 
-      <input
-        type="text"
-        placeholder="Nombre y apellidos">
+Antes de reunirnos con todos vosotros en Baja California Sur el próximo abril,
+nos hace una enorme ilusión compartir con vosotros la primera parte de nuestra celebración.
 
-      <input
-        type="text"
-        placeholder="Nombre y apellidos del acompañante">
+<br><br>
 
-      <button type="submit">
-        Confirmar asistencia
-      </button>
+El 9 de octubre de 2026 contraeremos matrimonio en una ceremonia íntima y familiar.
 
-    </form>
+<br><br>
 
-  </div>
+La verdadera fiesta comienza después, y nos encantaría que formarais parte de ella.
 
-  <div class="section">
+<br><br>
 
-    <h2>Regalo</h2>
+Os esperamos en Toledo para celebrarlo por todo lo alto en una noche llena de emoción, reencuentros, sorpresas, buena música y muchas ganas de brindar.
 
-    <p>
-      Vuestra compañía es el mejor regalo.
-    </p>
+<br><br>
 
-    <p>
-      Para quienes deseen tener un detalle con nosotros:
-    </p>
+Será una ocasión muy especial para compartir este momento con las personas que han formado parte de nuestra historia y que ocupan un lugar importante en nuestras vidas.
 
-    <div class="gift">
+<br><br>
 
-      <strong>IBAN</strong>
-
-      <br><br>
-
-      ESXX XXXX XXXX XXXX XXXX XXXX
-
-    </div>
-
-  </div>
-
-  <div class="footer">
-    Fernanda & Antonio
-  </div>
+Estamos deseando celebrarlo con vosotros.
 
 </div>
 
-</body>
-</html>
+<div class="section">
+
+<h2>Palacio de Galiana</h2>
+
+<div class="card">
+
+<div class="location-text">
+
+Palacio de Galiana
+
+<br>
+
+Toledo
+
+<br><br>
+
+9 de octubre de 2026
+
+<br>
+
+21:30 h
+
+</div>
+
