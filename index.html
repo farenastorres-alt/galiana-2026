@@ -2,63 +2,69 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fernanda & Antonio</title>
 
 <style>
+
 body{
     margin:0;
-    font-family: Georgia, serif;
     background:#f7f3ea;
     color:#4a4035;
+    font-family: Georgia, serif;
     text-align:center;
 }
 
-.container{
-    max-width:800px;
-    margin:auto;
-    padding:20px;
+.hero{
+    padding:60px 25px;
 }
 
 h1{
-    font-size:3rem;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#6f7c5d;
 }
 
 .section{
-    padding:50px 20px;
-}
-
-.card{
     background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 0 10px rgba(0,0,0,0.08);
+    margin:20px;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
 }
 
 input{
     width:100%;
-    padding:12px;
-    margin-top:10px;
-    margin-bottom:10px;
+    padding:14px;
+    margin:8px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
     box-sizing:border-box;
 }
 
 button{
+    width:100%;
     background:#b89a5e;
     color:white;
     border:none;
-    padding:15px 25px;
+    padding:16px;
     border-radius:8px;
+    font-size:16px;
 }
-</style>
 
+.small{
+    color:#777;
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="container">
-
-<div class="section">
+<div class="hero">
 
 <h1>Fernanda & Antonio</h1>
 
@@ -68,47 +74,49 @@ button{
 
 </div>
 
-<div class="section card">
+<div class="section">
 
 <h2>Celebración</h2>
 
 <p>
-Os esperamos en el Palacio de Galiana,
-Toledo, a las 21:30 h.
+Os esperamos para celebrar con nosotros un día muy especial.
 </p>
 
 <p>
-Etiqueta rigurosa:<br>
+📍 Palacio de Galiana · Toledo
+</p>
+
+<p>
+🕤 21:30 h
+</p>
+
+<p>
+🥂 Etiqueta rigurosa<br>
 Señores, esmoquin.<br>
 Señoras, traje largo.
 </p>
 
 </div>
 
-<div class="section card">
+<div class="section">
 
 <h2>Confirmación de asistencia</h2>
 
-<form>
+<input placeholder="Nombre y apellidos">
 
-<input
-type="text"
-placeholder="Nombre y apellidos"
-required>
+<input placeholder="Nombre y apellidos del acompañante">
 
-<input
-type="text"
-placeholder="Nombre y apellidos del acompañante">
-
-<button type="submit">
+<button>
 Confirmar asistencia
 </button>
 
-</form>
+<p class="small">
+La confirmación online estará disponible próximamente.
+</p>
 
 </div>
 
-<div class="section card">
+<div class="section">
 
 <h2>Regalo</h2>
 
@@ -125,6 +133,10 @@ IBAN: ESXX XXXX XXXX XXXX XXXX XXXX
 </p>
 
 </div>
+
+<div style="padding:40px">
+
+Fernanda & Antonio
 
 </div>
 
