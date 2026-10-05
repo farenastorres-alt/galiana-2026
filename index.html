@@ -6,165 +6,159 @@
 
 <title>Fernanda & Antonio</title>
 
-https://fonts.googleapis.com
-https://fonts.gstatic.com
+<link rel="preconnect" href="https://fonts.googleapism
 
-https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&
 
 <style>
 
 :root{
-  --background:#f7f2ea;
-  --text:#463d34;
-  --green:#77805f;
-  --gold:#b59a67;
+    --bg:#f7f2ea;
+    --text:#453d35;
+    --green:#798265;
+    --gold:#b79d69;
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-  background:var(--background);
-  color:var(--text);
-  font-family:'Inter',sans-serif;
-  text-align:center;
-  line-height:1.8;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Montserrat',sans-serif;
+    font-weight:300;
+    line-height:1.9;
+    text-align:center;
 }
 
 .hero img{
-  width:100%;
-  display:block;
+    width:100%;
+    display:block;
 }
 
 .container{
-  max-width:850px;
-  margin:auto;
-  padding:60px 30px;
+    max-width:850px;
+    margin:auto;
+    padding:60px 30px;
 }
 
 .names{
-  font-family:'Cormorant Garamond',serif;
-  font-size:78px;
-  font-weight:400;
-  line-height:1;
-  margin-bottom:15px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:78px;
+    line-height:1;
+    margin-bottom:10px;
 }
 
 .subtitle{
-  font-size:13px;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  color:#817568;
+    color:#7a7167;
+    font-size:12px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.separator{
+    width:140px;
+    height:1px;
+    background:#d4c7b8;
+    margin:40px auto;
 }
 
 .intro{
-  margin-top:70px;
-  font-size:18px;
-  max-width:700px;
-  margin-left:auto;
-  margin-right:auto;
+    font-size:17px;
+    max-width:700px;
+    margin:auto;
+}
+
+.highlight{
+    font-family:'Cormorant Garamond',serif;
+    font-size:30px;
+    color:var(--green);
+    margin:35px 0;
 }
 
 .section{
-  margin-top:100px;
+    margin-top:90px;
 }
 
 .section h2{
-  font-family:'Cormorant Garamond',serif;
-  font-size:52px;
-  font-weight:500;
-  color:var(--green);
-  margin-bottom:35px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:52px;
+    color:var(--green);
+    margin-bottom:30px;
 }
 
 .card{
-  background:rgba(255,255,255,0.55);
-  border:1px solid #ddd2c6;
-  border-radius:18px;
-  padding:40px;
-}
-
-.location-text{
-  font-size:17px;
+    border:1px solid #ddd0c2;
+    background:rgba(255,255,255,.45);
+    padding:40px;
+    border-radius:8px;
 }
 
 .button{
-  display:inline-block;
-  margin-top:25px;
-  background:var(--green);
-  color:white;
-  text-decoration:none;
-  padding:14px 32px;
-  border-radius:50px;
-  transition:0.3s;
-}
-
-.button:hover{
-  opacity:0.9;
+    display:inline-block;
+    text-decoration:none;
+    background:var(--green);
+    color:white;
+    padding:14px 30px;
+    border-radius:40px;
+    margin-top:25px;
 }
 
 form{
-  margin-top:30px;
+    margin-top:25px;
 }
 
 input{
-  width:100%;
-  padding:16px;
-  margin-bottom:15px;
-  border:1px solid #d8ccc0;
-  border-radius:10px;
-  background:white;
-  font-size:16px;
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #d8cdbf;
+    border-radius:8px;
+    font-size:16px;
 }
 
 button{
-  width:100%;
-  padding:16px;
-  border:none;
-  border-radius:50px;
-  background:var(--green);
-  color:white;
-  font-size:16px;
-  cursor:pointer;
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:40px;
+    background:var(--green);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
 }
 
 .gift-box{
-  margin-top:30px;
-  border:1px solid #d8ccc0;
-  border-radius:12px;
-  background:white;
-  padding:30px;
+    margin-top:25px;
+    padding:25px;
+    border-top:1px solid var(--gold);
+    border-bottom:1px solid var(--gold);
 }
 
 .iban{
-  letter-spacing:2px;
-  font-size:18px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:28px;
 }
 
 .footer{
-  margin-top:120px;
-  padding-bottom:60px;
-  font-family:'Cormorant Garamond',serif;
-  color:var(--green);
-  font-size:34px;
+    margin-top:100px;
+    color:var(--green);
+    font-family:'Cormorant Garamond',serif;
+    font-size:36px;
 }
 
 @media(max-width:768px){
 
-  .names{
-    font-size:54px;
-  }
+    .names{
+        font-size:52px;
+    }
 
-  .section h2{
-    font-size:40px;
-  }
-
-  .intro{
-    font-size:17px;
-  }
+    .section h2{
+        font-size:40px;
+    }
 
 }
 
@@ -175,9 +169,7 @@ button{
 
 <section class="hero">
 
-invitacion.jpg
-
-</section>
+<img class="invitationion>
 
 <div class="container">
 
@@ -186,49 +178,52 @@ Fernanda & Antonio
 </div>
 
 <div class="subtitle">
-Celebración en Toledo · 9 de octubre de 2026
+9 de octubre de 2026 · Toledo
 </div>
+
+<div class="separator"></div>
 
 <div class="intro">
 
-Antes de reunirnos con todos vosotros en Baja California Sur el próximo abril,
-nos hace una enorme ilusión compartir con vosotros la primera parte de nuestra celebración.
+<p>
+Antes de reunirnos con todos vosotros en Baja California Sur el próximo abril, nos hace muchísima ilusión compartir con vosotros la primera parte de nuestra celebración.
+</p>
 
-<br><br>
+<br>
 
+<p>
 El 9 de octubre de 2026 contraeremos matrimonio en una ceremonia íntima y familiar.
+</p>
 
-<br><br>
+<br>
 
-La verdadera fiesta comienza después, y nos encantaría que formarais parte de ella.
+<p>
+Después, queremos festejarlo por todo lo alto junto a vosotros.
+</p>
 
-<br><br>
+<div class="highlight">
+Os esperamos para vivir una noche llena de emoción, sorpresas, reencuentros, buena música y muchas ganas de brindar.
+</div>
 
-Os esperamos en Toledo para celebrarlo por todo lo alto en una noche llena de emoción, reencuentros, sorpresas, buena música y muchas ganas de brindar.
+<p>
+Será el comienzo de una nueva etapa y no imaginamos una forma más especial de celebrarlo que rodeados de las personas que han formado parte de nuestra historia.
+</p>
 
-<br><br>
+<br>
 
-Será una ocasión muy especial para compartir este momento con las personas que han formado parte de nuestra historia y que ocupan un lugar importante en nuestras vidas.
-
-<br><br>
-
-Estamos deseando celebrarlo con vosotros.
+<p>
+Estamos deseando compartir esta noche con vosotros.
+</p>
 
 </div>
 
 <div class="section">
 
-<h2>Palacio de Galiana</h2>
+<h2>La celebración</h2>
 
 <div class="card">
 
-<div class="location-text">
-
-Palacio de Galiana
-
-<br>
-
-Toledo
+<strong>Palacio de Galiana</strong>
 
 <br><br>
 
@@ -238,9 +233,17 @@ Toledo
 
 21:30 h
 
-</div>
+<br><br>
 
-https://maps.google.com/?q=Palacio+de+Galiana+Toledo
+Etiqueta rigurosa:
+esmoquin para los señores y traje largo para las señoras.
+
+<br><br>
+
+<a
+class="button"
+href="https://maps.google.com/?q=Palacio+de+Galiana+Toledo"
+target="_blank">
 Ver ubicación
 </a>
 
@@ -250,9 +253,7 @@ Ver ubicación
 
 <div class="section">
 
-<h2>Confirmación de asistencia</h2>
-
-<div class="card">
+<lass="card">
 
 <form>
 
@@ -276,30 +277,24 @@ Confirmar asistencia
 
 <div class="section">
 
-<h2>Regalo</h2>
+<h2>Un detalle</h2>
 
 <div class="card">
 
 <p>
-
-Vuestra presencia es, sin duda, el mejor regalo que podemos recibir y lo que verdaderamente dará sentido a esta celebración.
-
+Vuestra presencia es, sin duda, el mejor regalo que podemos recibir.
 </p>
 
 <br>
 
 <p>
-
-Para quienes deseen acompañarnos también con un detalle, hemos habilitado la siguiente cuenta:
-
+Para quienes deseen acompañarnos también con un detalle, os dejamos nuestros datos con todo nuestro cariño y agradecimiento.
 </p>
 
 <div class="gift-box">
 
 <div class="iban">
-
 ESXX XXXX XXXX XXXX XXXX XXXX
-
 </div>
 
 </div>
@@ -309,7 +304,7 @@ ESXX XXXX XXXX XXXX XXXX XXXX
 </div>
 
 <div class="footer">
-Fernanda & Antonio
+Fer & Cuco
 </div>
 
 </div>
