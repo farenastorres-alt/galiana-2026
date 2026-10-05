@@ -10,10 +10,8 @@
     name="description"
     content="Fernanda & Antonio · 9 de octubre de 2026 · Palacio de Galiana, Toledo"
   >
-  <title>Fernanda & Antonio · Toledo · 9 de octubre de 2026</title>
-  <!-- =====================================================
-       GOOGLE FONTS
-  ====================================================== -->
+  <title>Fernanda & Antonio · Toledo</title>
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     rel="preconnect"
@@ -25,9 +23,6 @@
     rel="stylesheet"
   >
   <style>
-    /* =====================================================
-       VARIABLES
-    ====================================================== */
     :root {
       --ivory: #f6f1e8;
       --paper: #fbf9f4;
@@ -38,9 +33,6 @@
       --gold: #ad9363;
       --line: #dcd3c7;
     }
-    /* =====================================================
-       RESET
-    ====================================================== */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -65,7 +57,7 @@
       text-decoration: none;
     }
     /* =====================================================
-       NAVIGATION
+       NAV
     ====================================================== */
     .nav {
       position: fixed;
@@ -118,9 +110,9 @@
       background:
         linear-gradient(
           to bottom,
-          rgba(0, 0, 0, 0.02) 35%,
-          rgba(0, 0, 0, 0.08) 55%,
-          rgba(0, 0, 0, 0.48) 100%
+          rgba(0,0,0,0.02) 35%,
+          rgba(0,0,0,0.08) 55%,
+          rgba(0,0,0,0.48) 100%
         );
       pointer-events: none;
     }
@@ -158,24 +150,14 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       opacity: 0.9;
-      animation: floating 2.5s ease-in-out infinite;
-    }
-    @keyframes floating {
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(6px);
-      }
     }
     /* =====================================================
-       GENERAL SECTIONS
+       SECTIONS
     ====================================================== */
     .section {
       padding: 105px 25px;
       text-align: center;
-      border-bottom: 1px solid rgba(173, 147, 99, 0.18);
+      border-bottom: 1px solid rgba(173,147,99,0.18);
     }
     .container {
       width: min(850px, 100%);
@@ -204,15 +186,8 @@
       line-height: 1.6;
       color: var(--text);
     }
-    .small-text {
-      max-width: 600px;
-      margin: 25px auto 0;
-      font-size: 13px;
-      line-height: 1.9;
-      color: var(--muted);
-    }
     /* =====================================================
-       INTRODUCTION
+       INTRO
     ====================================================== */
     .intro {
       padding-top: 120px;
@@ -265,9 +240,6 @@
       text-transform: uppercase;
       color: var(--muted);
     }
-    /* =====================================================
-       BUTTON
-    ====================================================== */
     .button {
       display: inline-block;
       margin-top: 32px;
@@ -278,9 +250,7 @@
       font-size: 9px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      transition:
-        background 0.3s ease,
-        color 0.3s ease;
+      transition: all 0.3s ease;
     }
     .button:hover {
       background: var(--olive);
@@ -298,7 +268,7 @@
     }
     .dress-item {
       padding: 45px 25px;
-      background: rgba(255, 255, 255, 0.28);
+      background: rgba(255,255,255,0.28);
     }
     .dress-item + .dress-item {
       border-left: 1px solid var(--line);
@@ -306,7 +276,6 @@
     .dress-title {
       font-family: "Cormorant Garamond", serif;
       font-size: 31px;
-      color: var(--text);
     }
     .dress-description {
       margin-top: 7px;
@@ -320,9 +289,9 @@
     ====================================================== */
     .rsvp-intro {
       max-width: 600px;
-      margin: 0 auto 40px;
+      margin: 0 auto 45px;
       font-family: "Cormorant Garamond", serif;
-      font-size: 22px;
+      font-size: 23px;
       line-height: 1.6;
     }
     .form {
@@ -359,9 +328,45 @@
     input::placeholder {
       color: #a39a8e;
     }
+    /* RADIO BUTTONS */
+    .radio-group {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .radio-option {
+      flex: 1;
+      position: relative;
+    }
+    .radio-option input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .radio-option label {
+      display: block;
+      padding: 14px 10px;
+      border: 1px solid var(--line);
+      text-align: center;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .radio-option input:checked + label {
+      border-color: var(--olive);
+      background: var(--olive);
+      color: white;
+    }
+    /* ACOMPAÑANTE */
+    #companionField {
+      display: none;
+    }
+    /* SUBMIT */
     .submit {
       width: 100%;
-      margin-top: 10px;
+      margin-top: 12px;
       padding: 17px;
       border: 1px solid var(--olive);
       background: var(--olive);
@@ -376,12 +381,35 @@
     .submit:hover {
       background: var(--olive-dark);
     }
-    .form-note {
-      margin-top: 20px;
+    .submit:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+    /* MESSAGE */
+    .form-message {
+      display: none;
+      padding: 35px 20px;
       text-align: center;
-      font-size: 11px;
-      line-height: 1.7;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .form-message h3 {
+      margin-bottom: 12px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 32px;
+      font-weight: 400;
+      color: var(--olive-dark);
+    }
+    .form-message p {
+      font-size: 13px;
       color: var(--muted);
+    }
+    .error-message {
+      display: none;
+      margin-top: 18px;
+      text-align: center;
+      font-size: 12px;
+      color: #9a5b50;
     }
     /* =====================================================
        GIFT
@@ -391,12 +419,18 @@
       margin: 40px auto 0;
       padding: 45px 25px;
       border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.25);
+      background: rgba(255,255,255,0.25);
     }
     .gift-title {
       font-family: "Cormorant Garamond", serif;
       font-size: 28px;
-      margin-bottom: 12px;
+    }
+    .gift-text {
+      max-width: 500px;
+      margin: 15px auto 0;
+      font-size: 13px;
+      line-height: 1.9;
+      color: var(--muted);
     }
     .iban {
       margin-top: 25px;
@@ -430,12 +464,12 @@
     ====================================================== */
     @media (max-width: 700px) {
       .nav {
-        padding: 15px 8px;
+        padding: 15px 5px;
       }
       .nav a {
-        margin: 0 6px;
+        margin: 0 5px;
         font-size: 7px;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.4px;
       }
       .hero {
         min-height: 90svh;
@@ -482,6 +516,9 @@
         border-left: none;
         border-top: 1px solid var(--line);
       }
+      .radio-group {
+        flex-direction: column;
+      }
       .footer-names {
         font-size: 40px;
       }
@@ -512,7 +549,7 @@
   <header class="hero">
     <img
       src="invitacion.jpg"
-      alt="Invitación de Fernanda y Antonio"
+      alt="Fernanda & Antonio"
       class="hero-image"
     >
     <div class="hero-content">
@@ -531,7 +568,7 @@
     </div>
   </header>
   <!-- =====================================================
-       INTRODUCTION
+       INTRO
   ====================================================== -->
   <section class="section intro">
     <div class="container">
@@ -543,18 +580,15 @@
       </h1>
       <div class="text">
         <p>
-          Antes de encontrarnos todos en Baja California Sur
-          el próximo abril, queremos hacer una primera parada en Toledo.
+          Queremos reunirnos en Toledo para brindar,
+          cenar, bailar y disfrutar juntos de una noche
+          muy especial.
         </p>
         <p>
-          El 9 de octubre nos reuniremos en el Palacio de Galiana
-          para brindar, cenar, bailar y disfrutar de una noche
-          que llevamos tiempo esperando.
-        </p>
-        <p>
-          Será una celebración más íntima que la de México,
-          pero con el mismo motivo: estar juntos y compartir
-          este momento con quienes han sido parte de nuestra historia.
+          El 9 de octubre nos encontraremos en el
+          Palacio de Galiana para celebrar y compartir
+          este momento con quienes han sido parte de
+          nuestra historia.
         </p>
         <p>
           Nos hace muchísima ilusión que estéis allí.
@@ -563,7 +597,7 @@
     </div>
   </section>
   <!-- =====================================================
-       CELEBRATION
+       CELEBRACIÓN
   ====================================================== -->
   <section
     class="section"
@@ -641,7 +675,7 @@
   </section>
   <!-- =====================================================
        RSVP
-    ====================================================== -->
+  ====================================================== -->
   <section
     class="section"
     id="rsvp"
@@ -654,50 +688,155 @@
         Confirmación de asistencia
       </h2>
       <div class="rsvp-intro">
-        Para nosotros lo importante es saber que vais a estar.
-        Os pedimos que cada invitado complete su propia confirmación.
+        Nos hace mucha ilusión contar contigo.
+        Por favor, confirma tu asistencia.
       </div>
       <form
+        id="rsvpForm"
         class="form"
-        onsubmit="return false;"
       >
+        <!-- NOMBRE -->
         <div class="field">
           <label for="nombre">
             Nombre y apellidos
           </label>
           <input
             id="nombre"
+            name="nombre"
             type="text"
             placeholder="Escribe tu nombre"
             autocomplete="name"
             required
           >
         </div>
+        <!-- TELÉFONO -->
         <div class="field">
+          <label for="telefono">
+            Número de teléfono
+          </label>
+          <input
+            id="telefono"
+            name="telefono"
+            type="tel"
+            placeholder="Tu número de teléfono"
+            autocomplete="tel"
+            required
+          >
+        </div>
+        <!-- ASISTENCIA -->
+        <div class="field">
+          <label>
+            ¿Asistirás?
+          </label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input
+                type="radio"
+                id="asiste-si"
+                name="asistencia"
+                value="Sí, asistiré"
+                required
+              >
+              <label for="asiste-si">
+                Sí, asistiré
+              </label>
+            </div>
+            <div class="radio-option">
+              <input
+                type="radio"
+                id="asiste-no"
+                name="asistencia"
+                value="No podré asistir"
+              >
+              <label for="asiste-no">
+                No podré asistir
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- ACOMPAÑANTE -->
+        <div
+          class="field"
+          id="companionQuestion"
+          style="display:none;"
+        >
+          <label>
+            ¿Vienes acompañado?
+          </label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input
+                type="radio"
+                id="acompanado-si"
+                name="acompanado"
+                value="Sí"
+              >
+              <label for="acompanado-si">
+                Sí
+              </label>
+            </div>
+            <div class="radio-option">
+              <input
+                type="radio"
+                id="acompanado-no"
+                name="acompanado"
+                value="No"
+              >
+              <label for="acompanado-no">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- NOMBRE ACOMPAÑANTE -->
+        <div
+          class="field"
+          id="companionField"
+        >
           <label for="acompanante">
-            Acompañante
+            Nombre y apellidos del acompañante
           </label>
           <input
             id="acompanante"
+            name="acompanante"
             type="text"
             placeholder="Nombre y apellidos"
           >
         </div>
+        <!-- BOTÓN -->
         <button
           type="submit"
           class="submit"
+          id="submitButton"
         >
           Confirmar asistencia
         </button>
-        <div class="form-note">
-          Próximamente os pediremos algunos datos más
-          para poder organizarlo todo.
+        <div
+          id="errorMessage"
+          class="error-message"
+        >
+          No hemos podido enviar la confirmación.
+          Por favor, inténtalo de nuevo.
         </div>
       </form>
+      <!-- MENSAJE FINAL -->
+      <div
+        id="successMessage"
+        class="form-message"
+      >
+        <h3>
+          Muchas gracias
+        </h3>
+        <p>
+          Hemos recibido tu confirmación.
+          <br>
+          Nos vemos en Toledo.
+        </p>
+      </div>
     </div>
   </section>
   <!-- =====================================================
-       GIFT
+       REGALO
   ====================================================== -->
   <section
     class="section"
@@ -718,11 +857,10 @@
         <div class="gift-title">
           Para quienes quieran acompañarnos también en esta nueva etapa
         </div>
-        <div class="small-text">
+        <div class="gift-text">
           Para quienes prefieran hacernos llegar un detalle
           de esta manera, dejamos aquí nuestros datos.
         </div>
-        <!-- Sustituir por el IBAN real -->
         <div class="iban">
           ESXX XXXX XXXX XXXX XXXX XXXX
         </div>
@@ -740,5 +878,174 @@
       Toledo · 9 de octubre de 2026
     </div>
   </footer>
+  <!-- =====================================================
+       RSVP JAVASCRIPT
+  ====================================================== -->
+  <script>
+    /*
+      ======================================================
+      IMPORTANTE
+      Cuando publiques Google Apps Script, te dará una URL
+      parecida a:
+      https://script.google.com/macros/s/XXXXXXXX/exec
+      Pégala aquí.
+      ======================================================
+    */
+    const GOOGLE_SCRIPT_URL =
+      "PEGAR_AQUI_LA_URL_DE_GOOGLE_APPS_SCRIPT";
+    const form = document.getElementById("rsvpForm");
+    const attendanceInputs =
+      document.querySelectorAll(
+        'input[name="asistencia"]'
+      );
+    const companionQuestion =
+      document.getElementById(
+        "companionQuestion"
+      );
+    const companionInputs =
+      document.querySelectorAll(
+        'input[name="acompanado"]'
+      );
+    const companionField =
+      document.getElementById(
+        "companionField"
+      );
+    const companionName =
+      document.getElementById(
+        "acompanante"
+      );
+    const submitButton =
+      document.getElementById(
+        "submitButton"
+      );
+    const successMessage =
+      document.getElementById(
+        "successMessage"
+      );
+    const errorMessage =
+      document.getElementById(
+        "errorMessage"
+      );
+    /*
+      ------------------------------------------------------
+      CUANDO SELECCIONA ASISTENCIA
+      ------------------------------------------------------
+    */
+    attendanceInputs.forEach(function(input) {
+      input.addEventListener(
+        "change",
+        function() {
+          if (
+            this.value === "Sí, asistiré"
+          ) {
+            companionQuestion.style.display =
+              "block";
+          } else {
+            companionQuestion.style.display =
+              "none";
+            companionField.style.display =
+              "none";
+            companionName.value = "";
+            companionInputs.forEach(
+              function(radio) {
+                radio.checked = false;
+              }
+            );
+          }
+        }
+      );
+    });
+    /*
+      ------------------------------------------------------
+      CUANDO SELECCIONA ACOMPAÑANTE
+      ------------------------------------------------------
+    */
+    companionInputs.forEach(function(input) {
+      input.addEventListener(
+        "change",
+        function() {
+          if (this.value === "Sí") {
+            companionField.style.display =
+              "block";
+            companionName.required =
+              true;
+          } else {
+            companionField.style.display =
+              "none";
+            companionName.required =
+              false;
+            companionName.value = "";
+          }
+        }
+      );
+    });
+    /*
+      ------------------------------------------------------
+      ENVÍO DEL FORMULARIO
+      ------------------------------------------------------
+    */
+    form.addEventListener(
+      "submit",
+      async function(event) {
+        event.preventDefault();
+        errorMessage.style.display =
+          "none";
+        if (
+          GOOGLE_SCRIPT_URL ===
+          "PEGAR_AQUI_LA_URL_DE_GOOGLE_APPS_SCRIPT"
+        ) {
+          alert(
+            "Todavía falta conectar el RSVP con Google Sheets."
+          );
+          return;
+        }
+        submitButton.disabled =
+          true;
+        submitButton.textContent =
+          "Enviando...";
+        const formData =
+          new FormData(form);
+        const data = {
+          nombre:
+            formData.get("nombre"),
+          telefono:
+            formData.get("telefono"),
+          asistencia:
+            formData.get("asistencia"),
+          acompanado:
+            formData.get("acompanado") || "",
+          acompanante:
+            formData.get("acompanante") || ""
+        };
+        try {
+          await fetch(
+            GOOGLE_SCRIPT_URL,
+            {
+              method: "POST",
+              mode: "no-cors",
+              headers: {
+                "Content-Type":
+                  "text/plain;charset=utf-8"
+              },
+              body:
+                JSON.stringify(data)
+            }
+          );
+          form.style.display =
+            "none";
+          successMessage.style.display =
+            "block";
+        } catch (error) {
+          console.error(error);
+          errorMessage.style.display =
+            "block";
+          submitButton.disabled =
+            false;
+          submitButton.textContent =
+            "Confirmar asistencia";
+        }
+      }
+    );
+  </script>
 </body>
 </html>
