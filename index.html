@@ -2,240 +2,1418 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Fernanda & Antonio</title>
+  <meta charset="UTF-8">
 
-https://fonts.googleapis.com
-https://fonts.gstatic.com
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap
+  <meta
+    name="description"
+    content="Fernanda & Antonio · 9 de octubre de 2026 · Palacio de Galiana, Toledo"
+  >
 
-<style>
+  <title>Fernanda & Antonio · Toledo · 9 de octubre de 2026</title>
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
 
-body{
-    background:#f7f3ea;
-    color:#3e352e;
-    text-align:center;
-}
+  <!-- =====================================================
+       GOOGLE FONTS
+  ====================================================== -->
 
-.hero{
-    max-width:900px;
-    margin:auto;
-    padding:30px 20px 50px;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-.hero img{
-    width:100%;
-    border-radius:12px;
-    display:block;
-}
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
-.names{
-    font-family:'Cormorant Garamond', serif;
-    font-size:56px;
-    font-weight:400;
-    margin-top:35px;
-    letter-spacing:1px;
-}
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
 
-.details{
-    font-family:'Montserrat', sans-serif;
-    margin-top:20px;
-    font-size:14px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:#857666;
-    line-height:2;
-}
 
-.section{
-    max-width:700px;
-    margin:70px auto;
-    padding:0 30px;
-}
+  <style>
 
-.title{
-    font-family:'Cormorant Garamond', serif;
-    font-size:44px;
-    color:#7d8666;
-    margin-bottom:30px;
-}
+    /* =====================================================
+       VARIABLES
+    ====================================================== */
 
-.text{
-    font-family:'Montserrat', sans-serif;
-    line-height:2;
-    font-size:15px;
-    color:#4d4339;
-}
+    :root {
 
-.form{
-    max-width:550px;
-    margin:auto;
-}
+      --ivory: #f6f1e8;
 
-input{
-    width:100%;
-    border:none;
-    border-bottom:1px solid #d7cec2;
-    background:transparent;
-    padding:18px 5px;
-    margin-bottom:25px;
-    font-size:16px;
-    font-family:'Montserrat', sans-serif;
-}
+      --paper: #fbf9f4;
 
-input:focus{
-    outline:none;
-    border-bottom:1px solid #7d8666;
-}
+      --text: #40382f;
 
-button{
-    width:100%;
-    background:#7d8666;
-    color:white;
-    border:none;
-    border-radius:50px;
-    padding:18px;
-    font-family:'Montserrat', sans-serif;
-    letter-spacing:1px;
-    margin-top:10px;
-}
+      --muted: #82776b;
 
-.gift-box{
-    margin-top:30px;
-    padding:25px;
-    border:1px solid #d7cec2;
-    border-radius:12px;
-}
+      --olive: #737c5d;
 
-.iban{
-    font-family:'Montserrat', sans-serif;
-    font-size:18px;
-    letter-spacing:1px;
-    margin-top:15px;
-}
+      --olive-dark: #596247;
 
-.footer{
-    padding:60px 20px;
-    font-family:'Cormorant Garamond', serif;
-    font-size:32px;
-    color:#7d8666;
-}
+      --gold: #ad9363;
 
-</style>
+      --line: #dcd3c7;
+
+      --white: #ffffff;
+
+    }
+
+
+    /* =====================================================
+       RESET
+    ====================================================== */
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+
+    body {
+
+      background: var(--ivory);
+
+      color: var(--text);
+
+      font-family: "Montserrat", sans-serif;
+
+      font-weight: 300;
+
+      line-height: 1.8;
+
+      -webkit-font-smoothing: antialiased;
+
+    }
+
+
+    img {
+
+      max-width: 100%;
+
+    }
+
+
+    a {
+
+      color: inherit;
+
+      text-decoration: none;
+
+    }
+
+
+    /* =====================================================
+       NAVIGATION
+    ====================================================== */
+
+    .nav {
+
+      position: fixed;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      z-index: 100;
+
+      padding: 18px 25px;
+
+      text-align: center;
+
+      background: rgba(246, 241, 232, 0.88);
+
+      backdrop-filter: blur(12px);
+
+      -webkit-backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid rgba(173, 147, 99, 0.15);
+
+    }
+
+
+    .nav a {
+
+      margin: 0 14px;
+
+      font-size: 9px;
+
+      letter-spacing: 2.5px;
+
+      text-transform: uppercase;
+
+      color: var(--muted);
+
+      transition: color 0.3s ease;
+
+    }
+
+
+    .nav a:hover {
+
+      color: var(--olive-dark);
+
+    }
+
+
+    /* =====================================================
+       HERO
+    ====================================================== */
+
+    .hero {
+
+      position: relative;
+
+      min-height: 100svh;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      justify-content: center;
+
+      overflow: hidden;
+
+      background: #ddd5ca;
+
+    }
+
+
+    .hero-image {
+
+      position: absolute;
+
+      inset: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      object-position: center;
+
+    }
+
+
+    .hero::after {
+
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,0.02) 35%,
+          rgba(0,0,0,0.08) 55%,
+          rgba(0,0,0,0.48) 100%
+        );
+
+      pointer-events: none;
+
+    }
+
+
+    .hero-content {
+
+      position: relative;
+
+      z-index: 2;
+
+      width: 100%;
+
+      padding: 100px 25px 65px;
+
+      text-align: center;
+
+      color: white;
+
+    }
+
+
+    .hero-date {
+
+      font-size: 10px;
+
+      letter-spacing: 5px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    .hero-names {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(58px, 10vw, 110px);
+
+      font-weight: 300;
+
+      line-height: 0.9;
+
+      letter-spacing: -2px;
+
+    }
+
+
+    .hero-place {
+
+      margin-top: 25px;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 24px;
+
+      letter-spacing: 1px;
+
+    }
+
+
+    .hero-scroll {
+
+      display: inline-block;
+
+      margin-top: 40px;
+
+      font-size: 9px;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      opacity: 0.9;
+
+      animation: floating 2.5s ease-in-out infinite;
+
+    }
+
+
+    @keyframes floating {
+
+      0%, 100% {
+
+        transform: translateY(0);
+
+      }
+
+      50% {
+
+        transform: translateY(6px);
+
+      }
+
+    }
+
+
+    /* =====================================================
+       GENERAL SECTIONS
+    ====================================================== */
+
+    .section {
+
+      padding: 105px 25px;
+
+      text-align: center;
+
+      border-bottom: 1px solid rgba(173, 147, 99, 0.18);
+
+    }
+
+
+    .container {
+
+      width: min(850px, 100%);
+
+      margin: 0 auto;
+
+    }
+
+
+    .eyebrow {
+
+      margin-bottom: 18px;
+
+      font-size: 9px;
+
+      letter-spacing: 4px;
+
+      text-transform: uppercase;
+
+      color: var(--gold);
+
+    }
+
+
+    .title {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(46px, 7vw, 68px);
+
+      font-weight: 400;
+
+      line-height: 1;
+
+      color: var(--olive-dark);
+
+      margin-bottom: 32px;
+
+    }
+
+
+    .text {
+
+      max-width: 650px;
+
+      margin: 0 auto;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 23px;
+
+      line-height: 1.6;
+
+      color: var(--text);
+
+    }
+
+
+    .small-text {
+
+      max-width: 600px;
+
+      margin: 25px auto 0;
+
+      font-family: "Montserrat", sans-serif;
+
+      font-size: 13px;
+
+      line-height: 1.9;
+
+      color: var(--muted);
+
+    }
+
+
+    /* =====================================================
+       INTRO
+    ====================================================== */
+
+    .intro {
+
+      padding-top: 120px;
+
+      padding-bottom: 120px;
+
+    }
+
+
+    .intro .text {
+
+      font-size: 25px;
+
+    }
+
+
+    .intro .text p + p {
+
+      margin-top: 24px;
+
+    }
+
+
+    /* =====================================================
+       EVENT
+    ====================================================== */
+
+    .event-card {
+
+      max-width: 650px;
+
+      margin: 45px auto 0;
+
+      padding: 50px 30px;
+
+      border-top: 1px solid var(--line);
+
+      border-bottom: 1px solid var(--line);
+
+    }
+
+
+    .event-date {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 36px;
+
+      line-height: 1.1;
+
+    }
+
+
+    .event-time {
+
+      margin-top: 8px;
+
+      font-family: "Montserrat", sans-serif;
+
+      font-size: 10px;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      color: var(--muted);
+
+    }
+
+
+    .event-divider {
+
+      width: 35px;
+
+      height: 1px;
+
+      margin: 28px auto;
+
+      background: var(--gold);
+
+    }
+
+
+    .venue {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 38px;
+
+      color: var(--olive-dark);
+
+      line-height: 1.1;
+
+    }
+
+
+    .city {
+
+      margin-top: 7px;
+
+      font-size: 10px;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      color: var(--muted);
+
+    }
+
+
+    /* =====================================================
+       BUTTONS
+    ====================================================== */
+
+    .button {
+
+      display: inline-block;
+
+      margin-top: 32px;
+
+      padding: 13px 30px;
+
+      border: 1px solid var(--olive);
+
+      background: transparent;
+
+      color: var(--olive-dark);
+
+      font-size: 9px;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      transition:
+        background 0.3s ease,
+        color 0.3s ease;
+
+    }
+
+
+    .button:hover {
+
+      background: var(--olive);
+
+      color: white;
+
+    }
+
+
+    /* =====================================================
+       DRESS CODE
+    ====================================================== */
+
+    .dress-code {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      max-width: 700px;
+
+      margin: 45px auto 0;
+
+      border: 1px solid var(--line);
+
+    }
+
+
+    .dress-item {
+
+      padding: 45px 25px;
+
+      background: rgba(255,255,255,0.28);
+
+    }
+
+
+    .dress-item + .dress-item {
+
+      border-left: 1px solid var(--line);
+
+    }
+
+
+    .dress-title {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 31px;
+
+      color: var(--text);
+
+    }
+
+
+    .dress-description {
+
+      margin-top: 7px;
+
+      font-size: 10px;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      color: var(--muted);
+
+    }
+
+
+    /* =====================================================
+       RSVP
+    ====================================================== */
+
+    .rsvp-intro {
+
+      max-width: 600px;
+
+      margin: 0 auto 40px;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 22px;
+
+      line-height: 1.6;
+
+    }
+
+
+    .form {
+
+      max-width: 560px;
+
+      margin: 0 auto;
+
+      text-align: left;
+
+    }
+
+
+    .field {
+
+      margin-bottom: 28px;
+
+    }
+
+
+    .field label {
+
+      display: block;
+
+      margin-bottom: 8px;
+
+      font-size: 9px;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      color: var(--muted);
+
+    }
+
+
+    input {
+
+      width: 100%;
+
+      padding: 15px 4px;
+
+      border: none;
+
+      border-bottom: 1px solid var(--line);
+
+      background: transparent;
+
+      color: var(--text);
+
+      font-family: "Montserrat", sans-serif;
+
+      font-size: 15px;
+
+      font-weight: 300;
+
+    }
+
+
+    input:focus {
+
+      outline: none;
+
+      border-bottom-color: var(--olive);
+
+    }
+
+
+    input::placeholder {
+
+      color: #a39a8e;
+
+    }
+
+
+    .submit {
+
+      width: 100%;
+
+      margin-top: 10px;
+
+      padding: 17px;
+
+      border: 1px solid var(--olive);
+
+      background: var(--olive);
+
+      color: white;
+
+      font-family: "Montserrat", sans-serif;
+
+      font-size: 10px;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      cursor: pointer;
+
+      transition: background 0.3s ease;
+
+    }
+
+
+    .submit:hover {
+
+      background: var(--olive-dark);
+
+    }
+
+
+    .form-note {
+
+      margin-top: 20px;
+
+      text-align: center;
+
+      font-size: 11px;
+
+      line-height: 1.7;
+
+      color: var(--muted);
+
+    }
+
+
+    /* =====================================================
+       GIFT
+    ====================================================== */
+
+    .gift-box {
+
+      max-width: 600px;
+
+      margin: 40px auto 0;
+
+      padding: 45px 25px;
+
+      border: 1px solid var(--line);
+
+      background: rgba(255,255,255,0.25);
+
+    }
+
+
+    .gift-title {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 28px;
+
+      margin-bottom: 12px;
+
+    }
+
+
+    .iban {
+
+      margin-top: 25px;
+
+      font-family: "Montserrat", sans-serif;
+
+      font-size: 14px;
+
+      letter-spacing: 1.5px;
+
+      color: var(--olive-dark);
+
+      word-break: break-word;
+
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ====================================================== */
+
+    .footer {
+
+      padding: 90px 25px 75px;
+
+      text-align: center;
+
+    }
+
+
+    .footer-names {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 48px;
+
+      font-weight: 300;
+
+      color: var(--olive-dark);
+
+    }
+
+
+    .footer-date {
+
+      margin-top: 12px;
+
+      font-size: 9px;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      color: var(--muted);
+
+    }
+
+
+    /* =====================================================
+       MOBILE
+    ====================================================== */
+
+    @media (max-width: 700px) {
+
+      .nav {
+
+        padding: 15px 8px;
+
+      }
+
+
+      .nav a {
+
+        margin: 0 6px;
+
+        font-size: 7px;
+
+        letter-spacing: 1.5px;
+
+      }
+
+
+      .hero {
+
+        min-height: 90svh;
+
+      }
+
+
+      .hero-content {
+
+        padding: 100px 20px 45px;
+
+      }
+
+
+      .hero-date {
+
+        font-size: 8px;
+
+        letter-spacing: 3px;
+
+      }
+
+
+      .hero-names {
+
+        font-size: clamp(53px, 15vw, 76px);
+
+      }
+
+
+      .hero-place {
+
+        font-size: 20px;
+
+      }
+
+
+      .section {
+
+        padding: 80px 20px;
+
+      }
+
+
+      .intro {
+
+        padding-top: 90px;
+
+        padding-bottom: 90px;
+
+      }
+
+
+      .text {
+
+        font-size: 21px;
+
+      }
+
+
+      .intro .text {
+
+        font-size: 22px;
+
+      }
+
+
+      .event-card {
+
+        padding: 40px 15px;
+
+      }
+
+
+      .venue {
+
+        font-size: 32px;
+
+      }
+
+
+      .dress-code {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .dress-item {
+
+        padding: 35px 20px;
+
+      }
+
+
+      .dress-item + .dress-item {
+
+        border-left: none;
+
+        border-top: 1px solid var(--line);
+
+      }
+
+
+      .footer-names {
+
+        font-size: 40px;
+
+      }
+
+    }
+
+  </style>
 
 </head>
 
+
 <body>
 
-<section class="hero">
 
-invitacion.jpg
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
 
-<div class="names">
-Fernanda & Antonio
-</div>
+  <nav class="nav">
 
-<div class="details">
-9 de octubre de 2026<br>
-Palacio de Galiana · Toledo
-</div>
+    <a href="#celebracion">
+      Celebración
+    </a>
 
-</section>
+    <a href="#dress-code">
+      Dress code
+    </a>
 
-<section class="section">
+    <a href="#rsvp">
+      Confirmación
+    </a>
 
-<h2 class="title">
-Celebración
-</h2>
+    <a href="#regalo">
+      Regalo
+    </a>
 
-<div class="text">
+  </nav>
 
-Os esperamos para celebrar con nosotros un día muy especial.
 
-<br><br>
 
-Palacio de Galiana · Toledo
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
 
-<br>
+  <header class="hero">
 
-21:30 h
+    <img
+      src="invitacion.jpg"
+      alt="Invitación de Fernanda y Antonio"
+      class="hero-image"
+    >
 
-<br><br>
+    <div class="hero-content">
 
-Etiqueta rigurosa
+      <div class="hero-date">
+        9 de octubre · 2026
+      </div>
 
-<br>
+      <div class="hero-names">
+        Fernanda & Antonio
+      </div>
 
-Señores, esmoquin.
+      <div class="hero-place">
+        Palacio de Galiana · Toledo
+      </div>
 
-<br>
+      <div class="hero-scroll">
+        Descubrir ↓
+      </div>
 
-Señoras, traje largo.
+    </div>
 
-</div>
+  </header>
 
-</section>
 
-<section class="section">
 
-<h2 class="title">
-Confirmación de asistencia
-</h2>
+  <!-- =====================================================
+       INTRODUCTION
+  ====================================================== -->
 
-<div class="form">
+  <section class="section intro">
 
-<input type="text" placeholder="Nombre y apellidos">
+    <div class="container">
 
-<input type="text" placeholder="Nombre y apellidos del acompañante">
+      <div class="eyebrow">
+        Una noche especial
+      </div>
 
-<button>
-Confirmar asistencia
-</button>
+      <h1 class="title">
+        Nos encantaría celebrarlo con vosotros
+      </h1>
 
-</div>
+      <div class="text">
 
-</section>
+        <p>
+          Antes de reunirnos con todos vosotros en Baja California Sur
+          el próximo abril, nos hace muchísima ilusión compartir juntos
+          la primera parte de nuestra celebración.
+        </p>
 
-<section class="section">
+        <p>
+          El 9 de octubre nos reuniremos en Toledo para disfrutar de
+          una noche muy especial con nuestra familia y nuestros amigos.
+        </p>
 
-<h2 class="title">
-Regalo
-</h2>
+        <p>
+          Queremos que sea una noche para reencontrarnos, brindar,
+          disfrutar de buena música y celebrar este momento con las
+          personas que más queremos.
+        </p>
 
-<div class="text">
+        <p>
+          Estamos deseando compartirla con vosotros.
+        </p>
 
-Vuestra compañía es el mejor regalo.
+      </div>
 
-<br><br>
+    </div>
 
-Para quienes deseen tener un detalle con nosotros:
+  </section>
 
-</div>
 
-<div class="gift-box">
 
-<div class="iban">
+  <!-- =====================================================
+       CELEBRATION
+  ====================================================== -->
 
-ESXX XXXX XXXX XXXX XXXX XXXX
+  <section
+    class="section"
+    id="celebracion"
+  >
 
-</div>
+    <div class="container">
 
-</div>
+      <div class="eyebrow">
+        La celebración
+      </div>
 
-</section>
+      <h2 class="title">
+        Palacio de Galiana
+      </h2>
 
-<div class="footer">
-Fernanda & Antonio
-</div>
+      <div class="event-card">
+
+        <div class="event-date">
+          Viernes, 9 de octubre
+        </div>
+
+        <div class="event-time">
+          21:30 h
+        </div>
+
+        <div class="event-divider"></div>
+
+        <div class="venue">
+          Palacio de Galiana
+        </div>
+
+        <div class="city">
+          Toledo
+        </div>
+
+        <a
+          class="button"
+          href="https://www.google.com/maps/search/?api=1&query=Palacio+de+Galiana+Toledo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Cómo llegar
+        </a>
+
+      </div>
+
+      <div class="small-text">
+
+        Una noche para disfrutar de Toledo y celebrar juntos
+        este momento tan importante para nosotros.
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       DRESS CODE
+  ====================================================== -->
+
+  <section
+    class="section"
+    id="dress-code"
+  >
+
+    <div class="container">
+
+      <div class="eyebrow">
+        Dress code
+      </div>
+
+      <h2 class="title">
+        Etiqueta rigurosa
+      </h2>
+
+      <div class="text">
+
+        Nos hace especial ilusión que la noche tenga
+        el carácter elegante que merece el Palacio de Galiana.
+
+      </div>
+
+
+      <div class="dress-code">
+
+        <div class="dress-item">
+
+          <div class="dress-title">
+            Señores
+          </div>
+
+          <div class="dress-description">
+            Esmoquin
+          </div>
+
+        </div>
+
+
+        <div class="dress-item">
+
+          <div class="dress-title">
+            Señoras
+          </div>
+
+          <div class="dress-description">
+            Traje largo
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       RSVP
+  ====================================================== -->
+
+  <section
+    class="section"
+    id="rsvp"
+  >
+
+    <div class="container">
+
+      <div class="eyebrow">
+        RSVP
+      </div>
+
+      <h2 class="title">
+        Confirmación de asistencia
+      </h2>
+
+      <div class="rsvp-intro">
+
+        Nos encantará saber que vais a acompañarnos.
+        Por favor, confirmad vuestra asistencia
+        a la celebración.
+
+      </div>
+
+
+      <!--
+        IMPORTANTE:
+        Este formulario está preparado visualmente,
+        pero todavía no está conectado a Google Sheets.
+
+        Cuando tengamos el enlace del formulario o
+        endpoint de Google, conectaremos este formulario.
+      -->
+
+      <form
+        class="form"
+        onsubmit="return false;"
+      >
+
+        <div class="field">
+
+          <label for="nombre">
+            Nombre y apellidos
+          </label>
+
+          <input
+            id="nombre"
+            type="text"
+            placeholder="Escribe tu nombre"
+            autocomplete="name"
+            required
+          >
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="acompanante">
+            Acompañante
+          </label>
+
+          <input
+            id="acompanante"
+            type="text"
+            placeholder="Nombre y apellidos"
+          >
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="submit"
+        >
+          Confirmar asistencia
+        </button>
+
+
+        <div class="form-note">
+
+          Cada invitado deberá completar su propia confirmación.
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       GIFT
+  ====================================================== -->
+
+  <section
+    class="section"
+    id="regalo"
+  >
+
+    <div class="container">
+
+      <div class="eyebrow">
+        Un detalle
+      </div>
+
+      <h2 class="title">
+        Regalo
+      </h2>
+
+
+      <div class="text">
+
+        Vuestra compañía es, sin duda,
+        el mejor regalo que podemos recibir.
+
+      </div>
+
+
+      <div class="gift-box">
+
+        <div class="gift-title">
+          Para quienes quieran tener un detalle con nosotros
+        </div>
+
+        <div class="small-text">
+
+          Hemos dejado aquí nuestros datos para quienes
+          prefieran hacernos llegar un detalle de esta manera.
+
+        </div>
+
+
+        <div class="iban">
+          ESXX XXXX XXXX XXXX XXXX XXXX
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+
+    <div class="footer-names">
+      Fernanda & Antonio
+    </div>
+
+    <div class="footer-date">
+      Toledo · 9 de octubre de 2026
+    </div>
+
+  </footer>
+
+
 
 </body>
+
 </html>
