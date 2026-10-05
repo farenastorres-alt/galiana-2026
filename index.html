@@ -17,7 +17,6 @@
 
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
@@ -30,7 +29,6 @@
   >
 
   <style>
-
     :root {
       --ivory: #f6f1e8;
       --paper: #fbf9f4;
@@ -493,7 +491,7 @@
     }
 
     /* =====================================================
-       GIFT
+       GIFT / BANCO
     ====================================================== */
 
     .gift-box {
@@ -507,6 +505,7 @@
     .gift-title {
       font-family: "Cormorant Garamond", serif;
       font-size: 28px;
+      line-height: 1.3;
     }
 
     .gift-text {
@@ -517,12 +516,54 @@
       color: var(--muted);
     }
 
-    .iban {
-      margin-top: 25px;
-      font-size: 14px;
-      letter-spacing: 1.5px;
+    .bank-details {
+      margin-top: 30px;
+      padding-top: 25px;
+      border-top: 1px solid var(--line);
+      text-align: left;
+    }
+
+    .bank-intro {
+      margin-bottom: 22px;
+      font-size: 12px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .bank-line {
+      margin-bottom: 14px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .bank-label {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 8px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .bank-value {
       color: var(--olive-dark);
       word-break: break-word;
+    }
+
+    .bank-note {
+      margin-top: 22px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 11px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .bank-address {
+      margin-top: 20px;
+      font-size: 11px;
+      line-height: 1.8;
+      color: var(--muted);
     }
 
     /* =====================================================
@@ -631,8 +672,11 @@
       .footer-names {
         font-size: 40px;
       }
-    }
 
+      .bank-details {
+        text-align: left;
+      }
+    }
   </style>
 </head>
 
@@ -728,8 +772,9 @@
         </p>
 
         <p>
-          Os esperamos para celebrar juntos esta primera parte
-          de nuestro enlace.
+          Nos hace muchísima ilusión que nos acompañeis
+          para festejar la primera parte de nuestro enlace.
+          To be continued...
         </p>
 
       </div>
@@ -875,7 +920,6 @@
         Por favor, confirma tu asistencia.
       </div>
 
-
       <form
         id="rsvpForm"
         class="form"
@@ -947,7 +991,6 @@
 
             </div>
 
-
             <div class="radio-option">
 
               <input
@@ -973,7 +1016,6 @@
         <div
           class="field"
           id="companionQuestion"
-          style="display: none;"
         >
 
           <label>
@@ -997,7 +1039,6 @@
 
             </div>
 
-
             <div class="radio-option">
 
               <input
@@ -1018,12 +1059,11 @@
         </div>
 
 
-        <!-- NOMBRE DEL ACOMPAÑANTE -->
+        <!-- NOMBRE ACOMPAÑANTE -->
 
         <div
           class="field"
           id="companionField"
-          style="display: none;"
         >
 
           <label for="acompanante">
@@ -1087,7 +1127,7 @@
 
 
   <!-- =====================================================
-       REGALO
+       REGALO / DATOS BANCARIOS
   ====================================================== -->
 
   <section
@@ -1106,9 +1146,12 @@
       </h2>
 
       <div class="text">
+
         Vuestra compañía es, de verdad,
         lo que más ilusión nos hace.
+
       </div>
+
 
       <div class="gift-box">
 
@@ -1121,8 +1164,78 @@
           de esta manera, dejamos aquí nuestros datos.
         </div>
 
-        <div class="iban">
-          ESXX XXXX XXXX XXXX XXXX XXXX
+
+        <div class="bank-details">
+
+          <div class="bank-intro">
+            Voici les numéros de compte Wise en EUR de
+            Antonio Arenas Torres.
+            <br><br>
+            Si vous envoyez de l'argent depuis une banque
+            dans la zone SEPA, vous pouvez utiliser ces
+            coordonnées pour effectuer un virement local.
+            Toutefois, si vous envoyez des fonds depuis un
+            autre pays, veuillez effectuer un transfert
+            international SWIFT.
+          </div>
+
+
+          <div class="bank-line">
+
+            <span class="bank-label">
+              Nom
+            </span>
+
+            <span class="bank-value">
+              Antonio Arenas Torres
+            </span>
+
+          </div>
+
+
+          <div class="bank-line">
+
+            <span class="bank-label">
+              IBAN
+            </span>
+
+            <span class="bank-value">
+              BE44 9671 9764 5445
+            </span>
+
+          </div>
+
+
+          <div class="bank-line">
+
+            <span class="bank-label">
+              SWIFT / BIC
+            </span>
+
+            <span class="bank-value">
+              TRWIBEB1XXX
+            </span>
+
+          </div>
+
+
+          <div class="bank-note">
+
+            Utilisez-les pour envoyer de l'argent depuis
+            un autre pays que : zone SEPA.
+
+          </div>
+
+
+          <div class="bank-address">
+
+            <strong>Adresse:</strong><br>
+
+            Wise, Rue du Trône 100, 3rd floor,
+            Brussels, 1050, Belgium
+
+          </div>
+
         </div>
 
       </div>
@@ -1155,55 +1268,61 @@
 
   <script>
 
-    /* ======================================================
-       GOOGLE APPS SCRIPT
-    ====================================================== */
+    /*
+      ======================================================
+      GOOGLE APPS SCRIPT
+      ======================================================
+    */
 
     const GOOGLE_SCRIPT_URL =
       "https://script.google.com/macros/s/AKfycbzy0aXD0Ck7Wl3JALOywBNDBcxKXidqNIw2Yw8F4pG_6gwRv9UqzBUQ-TaVG5i4dp17Rg/exec";
 
 
-    /* ======================================================
-       ELEMENTOS DEL FORMULARIO
-    ====================================================== */
-
     const form =
       document.getElementById("rsvpForm");
+
 
     const attendanceInputs =
       document.querySelectorAll(
         'input[name="asistencia"]'
       );
 
+
     const companionQuestion =
       document.getElementById(
         "companionQuestion"
       );
+
 
     const companionInputs =
       document.querySelectorAll(
         'input[name="acompanado"]'
       );
 
+
     const companionField =
       document.getElementById(
         "companionField"
       );
+
 
     const companionName =
       document.getElementById(
         "acompanante"
       );
 
+
     const submitButton =
       document.getElementById(
         "submitButton"
       );
 
+
     const successMessage =
       document.getElementById(
         "successMessage"
       );
+
 
     const errorMessage =
       document.getElementById(
@@ -1211,9 +1330,11 @@
       );
 
 
-    /* ======================================================
-       CUANDO SELECCIONA ASISTENCIA
-    ====================================================== */
+    /*
+      ======================================================
+      CUANDO SELECCIONA ASISTENCIA
+      ======================================================
+    */
 
     attendanceInputs.forEach(function(input) {
 
@@ -1244,7 +1365,10 @@
 
             companionInputs.forEach(
               function(radio) {
-                radio.checked = false;
+
+                radio.checked =
+                  false;
+
               }
             );
 
@@ -1256,9 +1380,11 @@
     });
 
 
-    /* ======================================================
-       CUANDO SELECCIONA ACOMPAÑANTE
-    ====================================================== */
+    /*
+      ======================================================
+      CUANDO SELECCIONA ACOMPAÑANTE
+      ======================================================
+    */
 
     companionInputs.forEach(function(input) {
 
@@ -1266,7 +1392,9 @@
         "change",
         function() {
 
-          if (this.value === "Sí") {
+          if (
+            this.value === "Sí"
+          ) {
 
             companionField.style.display =
               "block";
@@ -1293,9 +1421,11 @@
     });
 
 
-    /* ======================================================
-       ENVÍO DEL FORMULARIO
-    ====================================================== */
+    /*
+      ======================================================
+      ENVÍO DEL FORMULARIO
+      ======================================================
+    */
 
     form.addEventListener(
       "submit",
