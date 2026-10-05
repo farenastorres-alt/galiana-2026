@@ -1,239 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Fernanda & Antonio</title>
+  <title>Fernanda & Antonio</title>
 
-<link relonts.googleapis.com
-<link rel="preconnect" href<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300play=swap
+  <link relonts.googleapis.com
+  <link rel="preconnect" href="https://fonts.tps://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400=swap
 
-<style>
+  <style>
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-body{
-    background:#f7f3ea;
-    color:#3e352e;
-    text-align:center;
-}
+    body{
+      background:#f7f3ea;
+      color:#453c34;
+      text-align:center;
+      font-family:'Montserrat',sans-serif;
+    }
 
-.hero{
-    max-width:900px;
-    margin:auto;
-    padding:30px 20px 50px;
-}
+    .hero{
+      max-width:900px;
+      margin:auto;
+      padding:20px;
+    }
 
-.hero img{
-    width:100%;
-    border-radius:12px;
-    display:block;
-}
+    .hero img{
+      width:100%;
+      border-radius:12px;
+      display:block;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    }
 
-.names{
-    font-family:'Cormorant Garamond', serif;
-    font-size:56px;
-    font-weight:400;
-    margin-top:35px;
-    letter-spacing:1px;
-}
+    .names{
+      font-family:'Cormorant Garamond',serif;
+      font-size:4rem;
+      font-weight:400;
+      margin-top:35px;
+      color:#3f362f;
+    }
 
-.details{
-    font-family:'Montserrat', sans-serif;
-    margin-top:20px;
-    font-size:14px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:#857666;
-    line-height:2;
-}
+    .subtitle{
+      margin-top:10px;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:#8a7b6d;
+      font-size:0.85rem;
+      line-height:2;
+    }
 
-.section{
-    max-width:700px;
-    margin:70px auto;
-    padding:0 30px;
-}
+    .section{
+      max-width:700px;
+      margin:70px auto;
+      padding:0 25px;
+    }
 
-.title{
-    font-family:'Cormorant Garamond', serif;
-    font-size:44px;
-    color:#7d8666;
-    margin-bottom:30px;
-}
+    .title{
+      font-family:'Cormorant Garamond',serif;
+      font-size:3rem;
+      color:#7d8666;
+      font-weight:500;
+      margin-bottom:25px;
+    }
 
-.text{
-    font-family:'Montserrat', sans-serif;
-    line-height:2;
-    font-size:15px;
-    color:#4d4339;
-}
+    .text{
+      line-height:2;
+      font-size:15px;
+      color:#4d443b;
+    }
 
-.form{
-    max-width:550px;
-    margin:auto;
-}
+    form{
+      margin-top:35px;
+    }
 
-input{
-    width:100%;
-    border:none;
-    border-bottom:1px solid #d7cec2;
-    background:transparent;
-    padding:18px 5px;
-    margin-bottom:25px;
-    font-size:16px;
-    font-family:'Montserrat', sans-serif;
-}
+    input{
+      width:100%;
+      border:none;
+      border-bottom:1px solid #d7cec2;
+      background:transparent;
+      padding:18px 8px;
+      margin-bottom:20px;
+      font-size:16px;
+    }
 
-input:focus{
-    outline:none;
-    border-bottom:1px solid #7d8666;
-}
+    input:focus{
+      outline:none;
+      border-bottom:1px solid #7d8666;
+    }
 
-button{
-    width:100%;
-    background:#7d8666;
-    color:white;
-    border:none;
-    border-radius:50px;
-    padding:18px;
-    font-family:'Montserrat', sans-serif;
-    letter-spacing:1px;
-    margin-top:10px;
-}
+    button{
+      width:100%;
+      background:#7d8666;
+      color:white;
+      border:none;
+      border-radius:999px;
+      padding:18px;
+      font-size:15px;
+      letter-spacing:1px;
+      cursor:pointer;
+    }
 
-.gift-box{
-    margin-top:30px;
-    padding:25px;
-    border:1px solid #d7cec2;
-    border-radius:12px;
-}
+    .gift-box{
+      margin-top:25px;
+      border:1px solid #d7cec2;
+      padding:25px;
+      border-radius:12px;
+    }
 
-.iban{
-    font-family:'Montserrat', sans-serif;
-    font-size:18px;
-    letter-spacing:1px;
-    margin-top:15px;
-}
+    .iban{
+      font-size:18px;
+      letter-spacing:1px;
+    }
 
-.footer{
-    padding:60px 20px;
-    font-family:'Cormorant Garamond', serif;
-    font-size:32px;
-    color:#7d8666;
-}
+    .footer{
+      padding:60px 20px;
+      font-family:'Cormorant Garamond',serif;
+      font-size:32px;
+      color:#7d8666;
+    }
 
-</style>
+    @media (max-width:768px){
+
+      .names{
+        font-size:3rem;
+      }
+
+      .title{
+        font-size:2.4rem;
+      }
+
+    }
+
+  </style>
 
 </head>
 
 <body>
 
-<section class="hero">
+  <section class="hero">
 
-invitacion.jpg
+    <img src="invitacion.jpg" alt=""names">
+      Fernanda & Antonio
+    </div>
 
-<div class="names">
-Fernanda & Antonio
-</div>
+    <div class="subtitle">
+      9 de octubre de 2026<br>
+      Palacio de Galiana · Toledo
+    </div>
 
-<div class="details">
-9 de octubre de 2026<br>
-Palacio de Galiana · Toledo
-</div>
+  </section>
 
-</section>
+  <section class="section">
 
-<section class="section">
+    <h2 class="title">Confirmación de asistencia</h2>
 
-<h2 class="title">
-Celebración
-</h2>
+    <div class="text">
+      Nos haría muchísima ilusión contar con vuestra presencia.
+    </div>
 
-<div class="text">
+    <form>
 
-Os esperamos para celebrar con nosotros un día muy especial.
+      <input
+        type="text"
+        placeholder="Nombre y apellidos"
+      >
 
-<br><br>
+      <input
+        type="text"
+        placeholder="Nombre y apellidos del acompañante"
+      >
 
-Palacio de Galiana · Toledo
+      <button type="submit">
+        Confirmar asistencia
+      </button>
 
-<br>
+    </form>
 
-21:30 h
+  </section>
 
-<br><br>
+  <section class="section">
 
-Etiqueta rigurosa
+    <h2 class="title">Regalo</h2>
 
-<br>
+    <div class="text">
+      Vuestra compañía es el mejor regalo.
+      <br><br>
+      Para quienes deseen tener un detalle con nosotros:
+    </div>
 
-Señores, esmoquin.
+    <div class="gift-box">
 
-<br>
+      <div class="iban">
+        ESXX XXXX XXXX XXXX XXXX XXXX
+      </div>
 
-Señoras, traje largo.
+    </div>
 
-</div>
+  </section>
 
-</section>
-
-<section class="section">
-
-<h2 class="title">
-Confirmación de asistencia
-</h2>
-
-<div class="form">
-
-<input type="text" placeholder="Nombre y apellidos">
-
-<input type="text" placeholder="Nombre y apellidos del acompañante">
-
-<button>
-Confirmar asistencia
-</button>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="title">
-Regalo
-</h2>
-
-<div class="text">
-
-Vuestra compañía es el mejor regalo.
-
-<br><br>
-
-Para quienes deseen tener un detalle con nosotros:
-
-</div>
-
-<div class="gift-box">
-
-<div class="iban">
-
-ESXX XXXX XXXX XXXX XXXX XXXX
-
-</div>
-
-</div>
-
-</section>
-
-<div class="footer">
-Fernanda & Antonio
-</div>
+  <div class="footer">
+    Fernanda & Antonio
+  </div>
 
 </body>
 </html>
