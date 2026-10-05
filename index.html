@@ -2,27 +2,35 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
+
   <meta
     name="description"
     content="Fernanda & Antonio · 9 de octubre de 2026 · Palacio de Galiana, Toledo"
   >
+
   <title>Fernanda & Antonio · Toledo</title>
+
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin
   >
+
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap"
     rel="stylesheet"
   >
+
   <style>
+
     :root {
       --ivory: #f6f1e8;
       --paper: #fbf9f4;
@@ -33,14 +41,17 @@
       --gold: #ad9363;
       --line: #dcd3c7;
     }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     html {
       scroll-behavior: smooth;
     }
+
     body {
       background: var(--ivory);
       color: var(--text);
@@ -49,16 +60,20 @@
       line-height: 1.8;
       -webkit-font-smoothing: antialiased;
     }
+
     img {
       max-width: 100%;
     }
+
     a {
       color: inherit;
       text-decoration: none;
     }
+
     /* =====================================================
        NAV
     ====================================================== */
+
     .nav {
       position: fixed;
       top: 0;
@@ -72,6 +87,7 @@
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(173, 147, 99, 0.15);
     }
+
     .nav a {
       margin: 0 14px;
       font-size: 9px;
@@ -80,12 +96,15 @@
       color: var(--muted);
       transition: color 0.3s ease;
     }
+
     .nav a:hover {
       color: var(--olive-dark);
     }
+
     /* =====================================================
        HERO
     ====================================================== */
+
     .hero {
       position: relative;
       min-height: 100svh;
@@ -95,6 +114,7 @@
       overflow: hidden;
       background: #ddd5ca;
     }
+
     .hero-image {
       position: absolute;
       inset: 0;
@@ -103,6 +123,7 @@
       object-fit: cover;
       object-position: center;
     }
+
     .hero::after {
       content: "";
       position: absolute;
@@ -116,6 +137,7 @@
         );
       pointer-events: none;
     }
+
     .hero-content {
       position: relative;
       z-index: 2;
@@ -124,12 +146,14 @@
       text-align: center;
       color: white;
     }
+
     .hero-date {
       margin-bottom: 20px;
       font-size: 10px;
       letter-spacing: 5px;
       text-transform: uppercase;
     }
+
     .hero-names {
       font-family: "Cormorant Garamond", serif;
       font-size: clamp(58px, 10vw, 110px);
@@ -137,12 +161,14 @@
       line-height: 0.9;
       letter-spacing: -2px;
     }
+
     .hero-place {
       margin-top: 25px;
       font-family: "Cormorant Garamond", serif;
       font-size: 24px;
       letter-spacing: 1px;
     }
+
     .hero-scroll {
       display: inline-block;
       margin-top: 40px;
@@ -151,18 +177,22 @@
       text-transform: uppercase;
       opacity: 0.9;
     }
+
     /* =====================================================
        SECTIONS
     ====================================================== */
+
     .section {
       padding: 105px 25px;
       text-align: center;
       border-bottom: 1px solid rgba(173,147,99,0.18);
     }
+
     .container {
       width: min(850px, 100%);
       margin: 0 auto;
     }
+
     .eyebrow {
       margin-bottom: 18px;
       font-size: 9px;
@@ -170,6 +200,7 @@
       text-transform: uppercase;
       color: var(--gold);
     }
+
     .title {
       margin-bottom: 32px;
       font-family: "Cormorant Garamond", serif;
@@ -178,6 +209,7 @@
       line-height: 1;
       color: var(--olive-dark);
     }
+
     .text {
       max-width: 650px;
       margin: 0 auto;
@@ -186,22 +218,28 @@
       line-height: 1.6;
       color: var(--text);
     }
+
     /* =====================================================
        INTRO
     ====================================================== */
+
     .intro {
       padding-top: 120px;
       padding-bottom: 120px;
     }
+
     .intro .text {
       font-size: 25px;
     }
+
     .intro .text p + p {
       margin-top: 24px;
     }
+
     /* =====================================================
        EVENT
     ====================================================== */
+
     .event-card {
       max-width: 650px;
       margin: 45px auto 0;
@@ -209,11 +247,13 @@
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
+
     .event-date {
       font-family: "Cormorant Garamond", serif;
       font-size: 36px;
       line-height: 1.1;
     }
+
     .event-time {
       margin-top: 8px;
       font-size: 10px;
@@ -221,18 +261,21 @@
       text-transform: uppercase;
       color: var(--muted);
     }
+
     .event-divider {
       width: 35px;
       height: 1px;
       margin: 28px auto;
       background: var(--gold);
     }
+
     .venue {
       font-family: "Cormorant Garamond", serif;
       font-size: 38px;
       line-height: 1.1;
       color: var(--olive-dark);
     }
+
     .city {
       margin-top: 7px;
       font-size: 10px;
@@ -240,6 +283,7 @@
       text-transform: uppercase;
       color: var(--muted);
     }
+
     .button {
       display: inline-block;
       margin-top: 32px;
@@ -252,13 +296,16 @@
       text-transform: uppercase;
       transition: all 0.3s ease;
     }
+
     .button:hover {
       background: var(--olive);
       color: white;
     }
+
     /* =====================================================
        DRESS CODE
     ====================================================== */
+
     .dress-code {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -266,17 +313,21 @@
       margin: 45px auto 0;
       border: 1px solid var(--line);
     }
+
     .dress-item {
       padding: 45px 25px;
       background: rgba(255,255,255,0.28);
     }
+
     .dress-item + .dress-item {
       border-left: 1px solid var(--line);
     }
+
     .dress-title {
       font-family: "Cormorant Garamond", serif;
       font-size: 31px;
     }
+
     .dress-description {
       margin-top: 7px;
       font-size: 10px;
@@ -284,9 +335,11 @@
       text-transform: uppercase;
       color: var(--muted);
     }
+
     /* =====================================================
        RSVP
     ====================================================== */
+
     .rsvp-intro {
       max-width: 600px;
       margin: 0 auto 45px;
@@ -294,14 +347,17 @@
       font-size: 23px;
       line-height: 1.6;
     }
+
     .form {
       max-width: 560px;
       margin: 0 auto;
       text-align: left;
     }
+
     .field {
       margin-bottom: 28px;
     }
+
     .field label {
       display: block;
       margin-bottom: 8px;
@@ -310,6 +366,7 @@
       text-transform: uppercase;
       color: var(--muted);
     }
+
     input {
       width: 100%;
       padding: 15px 4px;
@@ -321,28 +378,35 @@
       font-size: 15px;
       font-weight: 300;
     }
+
     input:focus {
       outline: none;
       border-bottom-color: var(--olive);
     }
+
     input::placeholder {
       color: #a39a8e;
     }
+
     /* RADIO BUTTONS */
+
     .radio-group {
       display: flex;
       gap: 12px;
       margin-top: 12px;
     }
+
     .radio-option {
       flex: 1;
       position: relative;
     }
+
     .radio-option input {
       position: absolute;
       opacity: 0;
       pointer-events: none;
     }
+
     .radio-option label {
       display: block;
       padding: 14px 10px;
@@ -354,16 +418,25 @@
       cursor: pointer;
       transition: all 0.25s ease;
     }
+
     .radio-option input:checked + label {
       border-color: var(--olive);
       background: var(--olive);
       color: white;
     }
+
     /* ACOMPAÑANTE */
+
+    #companionQuestion {
+      display: none;
+    }
+
     #companionField {
       display: none;
     }
+
     /* SUBMIT */
+
     .submit {
       width: 100%;
       margin-top: 12px;
@@ -378,14 +451,18 @@
       cursor: pointer;
       transition: background 0.3s ease;
     }
+
     .submit:hover {
       background: var(--olive-dark);
     }
+
     .submit:disabled {
       opacity: 0.6;
       cursor: wait;
     }
+
     /* MESSAGE */
+
     .form-message {
       display: none;
       padding: 35px 20px;
@@ -393,6 +470,7 @@
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
+
     .form-message h3 {
       margin-bottom: 12px;
       font-family: "Cormorant Garamond", serif;
@@ -400,10 +478,12 @@
       font-weight: 400;
       color: var(--olive-dark);
     }
+
     .form-message p {
       font-size: 13px;
       color: var(--muted);
     }
+
     .error-message {
       display: none;
       margin-top: 18px;
@@ -411,9 +491,11 @@
       font-size: 12px;
       color: #9a5b50;
     }
+
     /* =====================================================
        GIFT
     ====================================================== */
+
     .gift-box {
       max-width: 600px;
       margin: 40px auto 0;
@@ -421,10 +503,12 @@
       border: 1px solid var(--line);
       background: rgba(255,255,255,0.25);
     }
+
     .gift-title {
       font-family: "Cormorant Garamond", serif;
       font-size: 28px;
     }
+
     .gift-text {
       max-width: 500px;
       margin: 15px auto 0;
@@ -432,6 +516,7 @@
       line-height: 1.9;
       color: var(--muted);
     }
+
     .iban {
       margin-top: 25px;
       font-size: 14px;
@@ -439,19 +524,23 @@
       color: var(--olive-dark);
       word-break: break-word;
     }
+
     /* =====================================================
        FOOTER
     ====================================================== */
+
     .footer {
       padding: 90px 25px 75px;
       text-align: center;
     }
+
     .footer-names {
       font-family: "Cormorant Garamond", serif;
       font-size: 48px;
       font-weight: 300;
       color: var(--olive-dark);
     }
+
     .footer-date {
       margin-top: 12px;
       font-size: 9px;
@@ -459,171 +548,236 @@
       text-transform: uppercase;
       color: var(--muted);
     }
+
     /* =====================================================
        MOBILE
     ====================================================== */
+
     @media (max-width: 700px) {
+
       .nav {
         padding: 15px 5px;
       }
+
       .nav a {
         margin: 0 5px;
         font-size: 7px;
         letter-spacing: 1.4px;
       }
+
       .hero {
         min-height: 90svh;
       }
+
       .hero-content {
         padding: 100px 20px 45px;
       }
+
       .hero-date {
         font-size: 8px;
         letter-spacing: 3px;
       }
+
       .hero-names {
         font-size: clamp(53px, 15vw, 76px);
       }
+
       .hero-place {
         font-size: 20px;
       }
+
       .section {
         padding: 80px 20px;
       }
+
       .intro {
         padding-top: 90px;
         padding-bottom: 90px;
       }
+
       .text {
         font-size: 21px;
       }
+
       .intro .text {
         font-size: 22px;
       }
+
       .event-card {
         padding: 40px 15px;
       }
+
       .venue {
         font-size: 32px;
       }
+
       .dress-code {
         grid-template-columns: 1fr;
       }
+
       .dress-item {
         padding: 35px 20px;
       }
+
       .dress-item + .dress-item {
         border-left: none;
         border-top: 1px solid var(--line);
       }
+
       .radio-group {
         flex-direction: column;
       }
+
       .footer-names {
         font-size: 40px;
       }
     }
+
   </style>
 </head>
+
 <body>
+
   <!-- =====================================================
        NAVIGATION
   ====================================================== -->
+
   <nav class="nav">
+
     <a href="#celebracion">
       Celebración
     </a>
+
     <a href="#dress-code">
       Etiqueta
     </a>
+
     <a href="#rsvp">
       Confirmación
     </a>
+
     <a href="#regalo">
       Un detalle
     </a>
+
   </nav>
+
+
   <!-- =====================================================
        HERO
   ====================================================== -->
+
   <header class="hero">
+
     <img
       src="invitacion.jpg"
       alt="Fernanda & Antonio"
       class="hero-image"
     >
+
     <div class="hero-content">
+
       <div class="hero-date">
         9 de octubre · 2026
       </div>
+
       <div class="hero-names">
         Fernanda & Antonio
       </div>
+
       <div class="hero-place">
         Palacio de Galiana · Toledo
       </div>
+
       <div class="hero-scroll">
         Descubrir ↓
       </div>
+
     </div>
+
   </header>
+
+
   <!-- =====================================================
        INTRO
   ====================================================== -->
+
   <section class="section intro">
+
     <div class="container">
+
       <div class="eyebrow">
         Una noche en Toledo
       </div>
+
       <h1 class="title">
         Nos vemos en Toledo
       </h1>
+
       <div class="text">
+
         <p>
-          El 9 de octubre contraeremos matrimonio 
+          El 9 de octubre contraeremos matrimonio
           en Toledo, en una ceremonia muy íntima y familiar.
         </p>
+
         <p>
-          La celebración continuará con una gran fiesta para 
-          celebrarlo por todo lo alto, en una noche muy emotiva, 
-          llena de sorpresas y buen ambiente. 
+          La celebración continuará con una gran fiesta para
+          celebrarlo por todo lo alto, en una noche muy emotiva,
+          llena de sorpresas y buen ambiente.
         </p>
+
         <p>
-          Nos hace muchísima ilusión que nos acompañeis 
-          para festejar la primera parte de nuestro enlace.
-          To be continued... 
+          Os esperamos para celebrar juntos esta primera parte
+          de nuestro enlace.
         </p>
+
       </div>
+
     </div>
+
   </section>
+
+
   <!-- =====================================================
        CELEBRACIÓN
   ====================================================== -->
+
   <section
     class="section"
     id="celebracion"
   >
+
     <div class="container">
+
       <div class="eyebrow">
         La celebración
       </div>
+
       <h2 class="title">
         Palacio de Galiana
       </h2>
+
       <div class="event-card">
+
         <div class="event-date">
           Viernes, 9 de octubre
         </div>
+
         <div class="event-time">
           Os esperamos a las 21:30 h
         </div>
+
         <div class="event-divider"></div>
+
         <div class="venue">
           Palacio de Galiana
         </div>
+
         <div class="city">
           Toledo
         </div>
+
         <a
           class="button"
           href="https://www.google.com/maps/search/?api=1&query=Palacio+de+Galiana+Toledo"
@@ -632,74 +786,109 @@
         >
           Cómo llegar
         </a>
+
       </div>
+
     </div>
+
   </section>
+
+
   <!-- =====================================================
        DRESS CODE
   ====================================================== -->
+
   <section
     class="section"
     id="dress-code"
   >
+
     <div class="container">
+
       <div class="eyebrow">
         Dress code
       </div>
+
       <h2 class="title">
         Etiqueta rigurosa
       </h2>
+
       <div class="text">
         Queremos que la noche tenga el carácter
         que merece el Palacio de Galiana.
       </div>
+
       <div class="dress-code">
+
         <div class="dress-item">
+
           <div class="dress-title">
             Señores
           </div>
+
           <div class="dress-description">
             Esmoquin
           </div>
+
         </div>
+
         <div class="dress-item">
+
           <div class="dress-title">
             Señoras
           </div>
+
           <div class="dress-description">
             Vestido largo
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
   <!-- =====================================================
        RSVP
   ====================================================== -->
+
   <section
     class="section"
     id="rsvp"
   >
+
     <div class="container">
+
       <div class="eyebrow">
         RSVP
       </div>
+
       <h2 class="title">
         Confirmación de asistencia
       </h2>
+
       <div class="rsvp-intro">
         Nos hace mucha ilusión contar contigo.
         Por favor, confirma tu asistencia.
       </div>
+
+
       <form
         id="rsvpForm"
         class="form"
       >
+
         <!-- NOMBRE -->
+
         <div class="field">
+
           <label for="nombre">
             Nombre y apellidos
           </label>
+
           <input
             id="nombre"
             name="nombre"
@@ -708,12 +897,18 @@
             autocomplete="name"
             required
           >
+
         </div>
+
+
         <!-- TELÉFONO -->
+
         <div class="field">
+
           <label for="telefono">
             Número de teléfono
           </label>
+
           <input
             id="telefono"
             name="telefono"
@@ -722,14 +917,22 @@
             autocomplete="tel"
             required
           >
+
         </div>
+
+
         <!-- ASISTENCIA -->
+
         <div class="field">
+
           <label>
             ¿Asistirás?
           </label>
+
           <div class="radio-group">
+
             <div class="radio-option">
+
               <input
                 type="radio"
                 id="asiste-si"
@@ -737,73 +940,108 @@
                 value="Sí, asistiré"
                 required
               >
+
               <label for="asiste-si">
                 Sí, asistiré
               </label>
+
             </div>
+
+
             <div class="radio-option">
+
               <input
                 type="radio"
                 id="asiste-no"
                 name="asistencia"
                 value="No podré asistir"
               >
+
               <label for="asiste-no">
                 No podré asistir
               </label>
+
             </div>
+
           </div>
+
         </div>
+
+
         <!-- ACOMPAÑANTE -->
+
         <div
           class="field"
           id="companionQuestion"
-          style="display:none;"
+          style="display: none;"
         >
+
           <label>
             ¿Vienes acompañado?
           </label>
+
           <div class="radio-group">
+
             <div class="radio-option">
+
               <input
                 type="radio"
                 id="acompanado-si"
                 name="acompanado"
                 value="Sí"
               >
+
               <label for="acompanado-si">
                 Sí
               </label>
+
             </div>
+
+
             <div class="radio-option">
+
               <input
                 type="radio"
                 id="acompanado-no"
                 name="acompanado"
                 value="No"
               >
+
               <label for="acompanado-no">
                 No
               </label>
+
             </div>
+
           </div>
+
         </div>
-        <!-- NOMBRE ACOMPAÑANTE -->
+
+
+        <!-- NOMBRE DEL ACOMPAÑANTE -->
+
         <div
           class="field"
           id="companionField"
+          style="display: none;"
         >
+
           <label for="acompanante">
             Nombre y apellidos del acompañante
           </label>
+
           <input
             id="acompanante"
             name="acompanante"
             type="text"
             placeholder="Nombre y apellidos"
           >
+
         </div>
+
+
         <!-- BOTÓN -->
+
         <button
           type="submit"
           class="submit"
@@ -811,6 +1049,8 @@
         >
           Confirmar asistencia
         </button>
+
+
         <div
           id="errorMessage"
           class="error-message"
@@ -818,234 +1058,331 @@
           No hemos podido enviar la confirmación.
           Por favor, inténtalo de nuevo.
         </div>
+
       </form>
+
+
       <!-- MENSAJE FINAL -->
+
       <div
         id="successMessage"
         class="form-message"
       >
+
         <h3>
           Muchas gracias
         </h3>
+
         <p>
           Hemos recibido tu confirmación.
           <br>
           Nos vemos en Toledo.
         </p>
+
       </div>
+
     </div>
+
   </section>
+
+
   <!-- =====================================================
        REGALO
   ====================================================== -->
+
   <section
     class="section"
     id="regalo"
   >
+
     <div class="container">
+
       <div class="eyebrow">
         Un detalle
       </div>
+
       <h2 class="title">
         Un detalle
       </h2>
+
       <div class="text">
         Vuestra compañía es, de verdad,
         lo que más ilusión nos hace.
       </div>
+
       <div class="gift-box">
+
         <div class="gift-title">
           Para quienes quieran acompañarnos también en esta nueva etapa
         </div>
+
         <div class="gift-text">
           Para quienes prefieran hacernos llegar un detalle
           de esta manera, dejamos aquí nuestros datos.
         </div>
+
         <div class="iban">
           ESXX XXXX XXXX XXXX XXXX XXXX
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
   <!-- =====================================================
        FOOTER
   ====================================================== -->
+
   <footer class="footer">
+
     <div class="footer-names">
       Fernanda & Antonio
     </div>
+
     <div class="footer-date">
       Toledo · 9 de octubre de 2026
     </div>
+
   </footer>
+
+
   <!-- =====================================================
        RSVP JAVASCRIPT
   ====================================================== -->
+
   <script>
-    /*
-      ======================================================
-      IMPORTANTE
-      Cuando publiques Google Apps Script, te dará una URL
-      parecida a:
-      https://script.google.com/macros/s/XXXXXXXX/exec
-      Pégala aquí.
-      ======================================================
-    */
+
+    /* ======================================================
+       GOOGLE APPS SCRIPT
+    ====================================================== */
+
     const GOOGLE_SCRIPT_URL =
-      https://script.google.com/macros/s/AKfycbzy0aXD0Ck7Wl3JALOywBNDBcxKXidqNIw2Yw8F4pG_6gwRv9UqzBUQ-TaVG5i4dp17Rg/exec;
-    const form = document.getElementById("rsvpForm");
+      "https://script.google.com/macros/s/AKfycbzy0aXD0Ck7Wl3JALOywBNDBcxKXidqNIw2Yw8F4pG_6gwRv9UqzBUQ-TaVG5i4dp17Rg/exec";
+
+
+    /* ======================================================
+       ELEMENTOS DEL FORMULARIO
+    ====================================================== */
+
+    const form =
+      document.getElementById("rsvpForm");
+
     const attendanceInputs =
       document.querySelectorAll(
         'input[name="asistencia"]'
       );
+
     const companionQuestion =
       document.getElementById(
         "companionQuestion"
       );
+
     const companionInputs =
       document.querySelectorAll(
         'input[name="acompanado"]'
       );
+
     const companionField =
       document.getElementById(
         "companionField"
       );
+
     const companionName =
       document.getElementById(
         "acompanante"
       );
+
     const submitButton =
       document.getElementById(
         "submitButton"
       );
+
     const successMessage =
       document.getElementById(
         "successMessage"
       );
+
     const errorMessage =
       document.getElementById(
         "errorMessage"
       );
-    /*
-      ------------------------------------------------------
-      CUANDO SELECCIONA ASISTENCIA
-      ------------------------------------------------------
-    */
+
+
+    /* ======================================================
+       CUANDO SELECCIONA ASISTENCIA
+    ====================================================== */
+
     attendanceInputs.forEach(function(input) {
+
       input.addEventListener(
         "change",
         function() {
+
           if (
             this.value === "Sí, asistiré"
           ) {
+
             companionQuestion.style.display =
               "block";
+
           } else {
+
             companionQuestion.style.display =
               "none";
+
             companionField.style.display =
               "none";
-            companionName.value = "";
+
+            companionName.value =
+              "";
+
+            companionName.required =
+              false;
+
             companionInputs.forEach(
               function(radio) {
                 radio.checked = false;
               }
             );
+
           }
+
         }
       );
+
     });
-    /*
-      ------------------------------------------------------
-      CUANDO SELECCIONA ACOMPAÑANTE
-      ------------------------------------------------------
-    */
+
+
+    /* ======================================================
+       CUANDO SELECCIONA ACOMPAÑANTE
+    ====================================================== */
+
     companionInputs.forEach(function(input) {
+
       input.addEventListener(
         "change",
         function() {
+
           if (this.value === "Sí") {
+
             companionField.style.display =
               "block";
+
             companionName.required =
               true;
+
           } else {
+
             companionField.style.display =
               "none";
+
             companionName.required =
               false;
-            companionName.value = "";
+
+            companionName.value =
+              "";
+
           }
+
         }
       );
+
     });
-    /*
-      ------------------------------------------------------
-      ENVÍO DEL FORMULARIO
-      ------------------------------------------------------
-    */
+
+
+    /* ======================================================
+       ENVÍO DEL FORMULARIO
+    ====================================================== */
+
     form.addEventListener(
       "submit",
       async function(event) {
+
         event.preventDefault();
+
         errorMessage.style.display =
           "none";
-        if (
-          GOOGLE_SCRIPT_URL ===
-          "PEGAR_AQUI_LA_URL_DE_GOOGLE_APPS_SCRIPT"
-        ) {
-          alert(
-            "Todavía falta conectar el RSVP con Google Sheets."
-          );
-          return;
-        }
+
         submitButton.disabled =
           true;
+
         submitButton.textContent =
           "Enviando...";
+
+
         const formData =
           new FormData(form);
+
+
         const data = {
+
           nombre:
             formData.get("nombre"),
+
           telefono:
             formData.get("telefono"),
+
           asistencia:
             formData.get("asistencia"),
+
           acompanado:
             formData.get("acompanado") || "",
+
           acompanante:
             formData.get("acompanante") || ""
+
         };
+
+
         try {
+
           await fetch(
             GOOGLE_SCRIPT_URL,
             {
               method: "POST",
+
               mode: "no-cors",
+
               headers: {
                 "Content-Type":
                   "text/plain;charset=utf-8"
               },
+
               body:
                 JSON.stringify(data)
             }
           );
+
+
           form.style.display =
             "none";
+
           successMessage.style.display =
             "block";
+
+
         } catch (error) {
+
           console.error(error);
+
           errorMessage.style.display =
             "block";
+
           submitButton.disabled =
             false;
+
           submitButton.textContent =
             "Confirmar asistencia";
+
         }
+
       }
     );
+
   </script>
+
 </body>
 </html>
